@@ -12,6 +12,36 @@ This guide provides practical support for facilitating the What is Radical Polit
 
 </div>
 
+<div class="section-block">
+
+## Session Scripts
+
+Access the detailed facilitator scripts for each week:
+
+<div class="session-buttons">
+  <a href="/facilitator-week-1/" class="session-button">
+    <span class="button-label">WEEK 1</span>
+    <span class="button-title">Radical Political Traditions</span>
+  </a>
+  
+  <a href="/facilitator-week-2/" class="session-button">
+    <span class="button-label">WEEK 2</span>
+    <span class="button-title">In, Against, and Beyond the State</span>
+  </a>
+  
+  <a href="/facilitator-week-3/" class="session-button">
+    <span class="button-label">WEEK 3</span>
+    <span class="button-title">Our Radical History</span>
+  </a>
+  
+  <a href="/facilitator-week-4/" class="session-button">
+    <span class="button-label">WEEK 4</span>
+    <span class="button-title">Mapping Counter-Power</span>
+  </a>
+</div>
+
+</div>
+
 <div class="section-block highlight-section">
 
 ## Course Philosophy

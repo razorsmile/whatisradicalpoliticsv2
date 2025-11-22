@@ -1,0 +1,122 @@
+---
+title: "Week 1 Facilitator Script"
+description: "This is a script for the first week of the Radical Education course. It is designed to help facilitators run the session effectively."
+type: "facilitator"
+---
+
+<h4>HOUR 1: Structured Content (60 mins)</h4>
+
+<h5>Opening (10 mins)</h5>
+<div class="facilitator-script">
+    <p><strong>Facilitator Script:</strong></p>
+    <P>Give out HANDOUT 1 to the participants.</P>
+    <p>"Welcome to 'What is Radical Politics?' - a four-week journey through different ways of understanding radical political change. This isn't about learning the 'correct' line or becoming better campaigners. It's about developing critical thinking tools.</p>
+    <p>Let's start with introductions - your name, and in one sentence, what brought you here tonight. I'll start..."</p>
+    <p>[Go around room - keep strict time]</p>
+    <p>"Before we dive in, let me set expectations: There's no homework, no required reading. But for those who want to go deeper, I'll offer optional tasks and resources. Also, everything we discuss stays in this room unless someone explicitly agrees to share their story publicly."</p>
+</div>
+
+<h5>Part 1: What Does 'Radical' Mean? (15 mins)</h5>
+<div class="facilitator-script">
+    <p><strong>Facilitator Script:</strong></p>
+    <p>"Let's start with the word itself. What do you think 'radical' means in politics? Call out some ideas..."</p>
+    <p>[Write responses on flipchart]</p>
+    <p>"Etymologically, 'radical' comes from the Latin 'radix' - meaning root. Radical politics means going to the root causes of problems, not just addressing symptoms.</p>
+    <p>For example, take homelessness in Brighton. A non-radical approach might be: build more shelters, provide more services. A radical approach asks: Why does homelessness exist? What systems create it? How might we reorganize society to eliminate it entirely?</p>
+    <p>This 'going to the root' can mean different things:</p>
+    <ul>
+        <li><strong>Structural change</strong> not reform</li>
+        <li><strong>Systemic analysis</strong> not individual blame</li>
+        <li><strong>Transformation</strong> not adjustment</li>
+        <li><strong>Collective solutions</strong> not individual fixes"</li>
+    </ul>
+</div>
+
+<h5>Part 2: Six Radical Traditions (25 mins)</h5>
+<div class="facilitator-script">
+    <p><strong>Facilitator Script:</strong></p>
+    <p>"Tonight we'll explore six major radical traditions. These aren't separate menu items you choose from - they're in constant conversation and tension with each other. Many people and movements draw from multiple traditions."</p>
+    <p>[HANDOUT 2 to the participants.]</p><br>
+    <p><strong>1. SOCIALISM</strong><br>
+    "Socialism sees capitalism as the root problem - private ownership of the means of production creates exploitation. The solution involves collective ownership and democratic planning. In Brighton, think of campaigns for council housing, or Your Party's advocacy for public ownership of utilities."</p>
+    <p><strong>2. ANARCHISM</strong><br>
+    "Anarchism identifies hierarchy and domination as root problems - not just capitalism but all forms of coercive authority. The solution is horizontal organization and mutual aid. Locally, think of the Cowley Club, Vegan Food Bank, or squatting movements."</p>
+    <p><strong>3. COMMUNISM</strong><br>
+    "Communism envisions a classless, stateless society with production based on need not profit. While sharing socialist critique of capitalism, it often emphasizes revolutionary transformation over gradual change. The Brighton unemployed workers' movements of the 1930s had strong communist influence."</p>
+    <p><strong>4. FEMINISM AND QUEER LIBERATION</strong><br>
+    "Feminism and Queer liberation sees patriarchy as a fundamental system of oppression intersecting with capitalism and racism. It's not just about equal rights but transforming gendered power relations. Brighton's Reclaim the Night marches and women's refuge movement emerge from this tradition, as do the Pride marches and spaces like the Queery."</p>
+    <p><strong>5. ANTI-RACIST/ANTI-COLONIAL THOUGHT</strong><br>
+    "This tradition identifies colonialism and ongoing colonial relations as foundational to current global inequality. It's not just about formal independence but decolonizing knowledge, institutions, and relationships. In Brighton, groups like the Palestine Solidarity Campaign draw on anti-colonial analysis."</p>
+    <p><strong>6. ECOLOGICAL POLITICS</strong><br>
+    "Radical ecology sees the exploitation of nature as inseparable from exploitation of people. It's not about better recycling but transforming our relationship with the natural world. Think of Brighton's role in the Fracking resistance or Extinction Rebellion actions."</p>
+</div>
+
+<h5>Part 3: Traditions in Conversation (10 mins)</h5>
+<div class="facilitator-script">
+    <p><strong>Facilitator Script:</strong></p>
+    <p>"These traditions don't exist in isolation. Let's look at some productive tensions:</p>
+    <ul>
+        <li><strong>Socialist-Feminist debates:</strong> Is class or gender the primary oppression? How do they intersect?</li>
+        <li><strong>Anarchist-Communist tensions:</strong> Can we use state power for liberation or does it always corrupt?</li>
+        <li><strong>Decolonial-Socialist conversations:</strong> Is socialism a European framework imposed globally or a universal tool for liberation?</li>
+        <li><strong>Ecological-Socialist synthesis:</strong> Can we have sustainable socialism or does industrialism itself need dismantling?</li>
+    </ul>
+    <p>These tensions are productive - they push our thinking forward."</p>
+</div>
+<br>
+<h4>HOUR 2: Open Discussion (60 mins)</h4>
+
+<h5>Jargon Buster (5 mins)</h5>
+<p>[Handout 3 to the participants and quickly review]</p>
+<p><strong>Key Terms for Session 1:</strong></p>
+<ul>
+    <li><strong>Dual power:</strong> Building alternative institutions alongside existing ones</li>
+    <li><strong>Intersectionality:</strong> How different oppressions overlap and interact</li>
+    <li><strong>Means of production:</strong> Tools, factories, land used to produce goods</li>
+    <li><strong>Mutual aid:</strong> Voluntary reciprocal exchange of resources and services for mutual benefit</li>
+    <li><strong>Patriarchy:</strong> System of male dominance in social, political, and economic life</li>
+    <li><strong>Prefigurative politics:</strong> Creating the world you want to see now</li>
+    <li><strong>Praxis:</strong> Unity of theory and practice - ideas tested through action</li>
+    <li><strong>Social reproduction:</strong> Work required to maintain life - cooking, cleaning, caring, raising children</li>
+    <li><strong>Solidarity:</strong> Unity in struggle against common enemies</li>
+</ul>
+<br>
+<h4>Discussion Exercise: Mapping Your Politics (25 mins)</h4>
+<div class="facilitator-script">
+    <p><strong>Facilitator Script:</strong></p>
+    <p>"Let's make this personal. Think about an issue you care about - could be housing, climate, wages, healthcare. Take 5 minutes to write down:</p>
+    <ol>
+        <li>What's the root cause of this problem?</li>
+        <li>What would radical change look like?</li>
+        <li>Which tradition(s) resonate with your analysis?"</li>
+    </ol>
+    <p>[5 mins individual writing]</p>
+    <p>"Now find a partner and share. Look for where your analyses align and where they diverge."</p>
+    <p>[10 mins pair discussion]</p>
+    <p>"Let's hear some examples. What patterns did you notice?"</p>
+    <p>[10 mins full group discussion]</p>
+</div>
+
+<h5>Setting the Optional Task (5 mins)</h5>
+<div class="facilitator-script">
+    <p><strong>Facilitator Script:</strong></p>
+    <p>"For those interested, here's an optional task for next week: Research ONE example of radical politics in Brighton's history OR identify ONE current local organization/project that embodies radical politics. Bring a 2-minute sharing next week. This could be:</p>
+    <ul>
+        <li>A historical event or movement</li>
+        <li>A current group or space</li>
+        <li>A specific campaign or action</li>
+        <li>A person or collective</li>
+    </ul>
+</div>
+
+<h5>Closing Circle (25 mins)</h5>
+<p><strong>Discussion Prompts:</strong></p>
+<ol>
+    <li>"Which tradition surprised you or challenged your assumptions?"</li>
+    <li>"Where do you see these traditions active in Brighton today?"</li>
+    <li>"What tensions between traditions do you experience in your own politics?"</li>
+</ol>
+<div class="facilitator-script">
+    <p><strong>Facilitator Script for Closing:</strong></p>
+    <p>"Next week we'll explore how these different traditions relate to the state - working in it, against it, or beyond it. We'll use housing as our concrete example throughout. Thank you for your engagement tonight."</p>
+</div>

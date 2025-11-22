@@ -1,0 +1,22 @@
+{{ define "main" }}
+<section class="session-hero">
+  <div class="session-hero-content">
+    {{ if .Params.week_badge }}
+    <span class="week-badge">{{ .Params.week_badge }}</span>
+    {{ end }}
+    <h1>{{ .Title }}</h1>
+    {{ if .Params.subtitle }}
+    <p class="session-subtitle">{{ .Params.subtitle }}</p>
+    {{ end }}
+    {{ if .Params.description }}
+    <p class="session-description">{{ .Params.description }}</p>
+    {{ end }}
+  </div>
+</section>
+
+<section class="session-content">
+  <div class="content-wrapper">
+    {{ .Content }}
+  </div>
+</section>
+{{ end }}

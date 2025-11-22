@@ -1,0 +1,9 @@
+{
+  "name": "radical-education",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "hugo server -D --disableFastRender",
+    "build": "hugo"
+  }
+}

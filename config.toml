@@ -1,0 +1,9 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "radical // education"
+
+[params]
+  author = "radical // education"
+
+[markup.goldmark.renderer]
+  unsafe = true

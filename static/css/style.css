@@ -413,6 +413,60 @@ main {
   font-weight: 600;
 }
 
+.session-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.session-button {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  background: white;
+  border: 2px solid #667eea;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.session-button:hover {
+  background: #667eea;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.session-button .button-label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #667eea;
+  margin-bottom: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.session-button:hover .button-label {
+  color: white;
+}
+
+.session-button .button-title {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.session-button:hover .button-title {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .session-buttons {
+    grid-template-columns: 1fr;
+  }
+}
+
 .overview-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));

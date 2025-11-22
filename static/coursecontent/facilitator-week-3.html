@@ -2,12 +2,67 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Week 3 Facilitator Script</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 3 Facilitator Script - What is Radical Politics?</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/coursecontent/facilitator-style.css">
+    <style>
+        body { background: #f5f5f5; padding: 0; }
+        main { min-height: 60vh; padding: 2rem 0; }
+        .facilitator-container { max-width: 900px; margin: 0 auto; background: white; padding: 3rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    </style>
 </head>
 <body>
+    <canvas id="background-pattern"></canvas>
+    
+    <header>
+        <div class="header-content">
+            <h1 class="site-title"><a href="/">What is Radical Politics?</a></h1>
+            <button class="burger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="/#about">About</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Sessions ▾</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/session-1/">Week 1: Radical Traditions</a></li>
+                            <li><a href="/session-2/">Week 2: In, Against, Beyond</a></li>
+                            <li><a href="/session-3/">Week 3: Radical History</a></li>
+                            <li><a href="/session-4/">Week 4: Counter-Power</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Course Materials ▾</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/facilitatorguide/">Facilitators Guide</a></li>
+                            <li><a href="#">Handouts</a></li>
+                            <li><a href="#">Resources</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/#course-overview">Course Overview</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <h1>Week 3 Facilitator Script</h1>
-    <p>This is a script for the third week of the Radical Education course. It is designed to help facilitators run the session effectively.</p>
+    <main>
+    <div class="facilitator-container">
+        <div class="facilitator-header">
+            <h1>Week 3 Facilitator Script</h1>
+            <button class="print-button" onclick="window.print()">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path>
+                </svg>
+                Print Script
+            </button>
+        </div>
+        
+        <p class="facilitator-intro">This is a script for the third week of the Radical Education course. It is designed to help facilitators run the session effectively.</p>
     
     <h4>HOUR 1: Structured Content (60 mins)</h4>
 
@@ -166,5 +221,31 @@
         <p>"Next week, our final session, we'll map working-class counter-power in Brighton today. We'll use methods from Italian Marxist sociology - workers' inquiry and co-research - to identify where collective power exists now.</p>
         <p>Optional task: Identify one mutual aid project, self-organized space, or community infrastructure in Brighton. We'll build a resource map together."</p>
     </div>
+    </div>
+    </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>radical // education</h4>
+                    <p>Critical thinking for radical change</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>License</h4>
+                    <p>Materials freely available to copy, share, and adapt for non-commercial political education.</p>
+                </div>
+                
+                <div class="footer-section footer-back-to-top">
+                    <a href="#" class="back-to-top">↑ Back to Top</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/background-pattern.js"></script>
+    <script src="/js/burger-menu.js"></script>
 </body>
 </html>

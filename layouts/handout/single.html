@@ -1,0 +1,23 @@
+{{ define "main" }}
+<section class="session-hero">
+  <div class="session-hero-content">
+    <h1>{{ .Title }}</h1>
+    {{ if .Params.description }}
+    <p class="session-description">{{ .Params.description }}</p>
+    {{ end }}
+  </div>
+</section>
+
+<section class="session-content">
+  <div class="content-wrapper">
+    {{ .Content }}
+    
+    <div class="handout-footer-nav">
+      <a href="/handouts/" class="back-link">← Back to All Handouts</a>
+      <button onclick="window.print()" class="print-button" aria-label="Print this handout for offline use" title="Print this handout">
+        <span aria-hidden="true">🖨️</span> Print Handout
+      </button>
+    </div>
+  </div>
+</section>
+{{ end }}

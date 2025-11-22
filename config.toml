@@ -1,8 +1,19 @@
-baseURL = "http://example.org/"
+baseURL = "/"
 languageCode = "en-us"
 title = "radical // education"
 
+# Disable taxonomies, sitemap, and RSS generation
+disableKinds = ["taxonomy", "term", "sitemap", "RSS"]
+
+# Enable relative URLs for offline/portable use
+relativeURLs = true
+canonifyURLs = false
+
+# Ignore the downloads folder to prevent recursive ZIP inclusion
+ignoreFiles = ["static/downloads/.*\\.zip$"]
+
 [params]
+  description = "Critical thinking for radical change"
   author = "radical // education"
 
 [markup.goldmark.renderer]

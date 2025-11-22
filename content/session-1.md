@@ -2,7 +2,9 @@
 title: "Radical Political Traditions"
 subtitle: "Philosophy Lens"
 description: "What makes politics 'radical' and what traditions inform radical thinking?"
+type: "session"
 week_badge: "WEEK 1"
+weight: 1
 ---
 
 <div class="section-block">

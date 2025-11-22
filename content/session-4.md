@@ -2,14 +2,18 @@
 title: "Mapping Working-Class Counter-Power"
 subtitle: "Sociology Lens"
 description: "Where does working-class power exist in your locality today?"
+type: "session"
 week_badge: "WEEK 4"
+weight: 4
 ---
 
 <div class="section-block">
 
 ## Overview
 
-Our final session introduces the Italian workerist tradition of 'inchiesta operaia' (workers' inquiry) and conricerca (co-research). We collectively map mutual aid networks, self-organized projects, and community infrastructure in your locality, creating a physical resource. This session adapts examples from Brighton - replace with your own local sites of counter-power.
+Our final session introduces the Italian workerist tradition of 'inchiesta operaia' (workers' inquiry) and conricerca (co-research). We collectively map mutual aid networks, self-organized projects, and community infrastructure in our locality, creating a physical resource. This session adapts examples from Brighton - replace with our own local sites of counter-power.
+
+There is a short history of the workers inquiry and its contemporary relevance in Handout 11 if you want to explore it some more.
 
 </div>
 
@@ -134,9 +138,9 @@ Breaking the monopoly on knowledge production and distribution, creating our own
 
 <div class="tradition-card multitude-card">
 
-### The Multitude
-
-Antonio Negri called these dispersed but connected sites of resistance and creation "the multitude." None of these alone threatens capitalism - but together they form the infrastructure of a new world.
+### We Are The Multitude - a new way to understand our class
+ 
+Philosopher Antonio Negri uses "the multitude" to describe not a unified working class but a plural, diverse formation of all who labor under capital. Counter-power exists wherever the multitude self-organizes: in workplaces, homes, streets, and digital spaces. These four categories are examples of how the multitude builds capacity for collective self-determination.
 
 </div>
 

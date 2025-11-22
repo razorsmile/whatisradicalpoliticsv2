@@ -2,14 +2,16 @@
 title: "Our Radical History"
 subtitle: "History Lens"
 description: "What can we learn from local radical history?"
+type: "session"
 week_badge: "WEEK 3"
+weight: 3
 ---
 
 <div class="section-block">
 
 ## Overview
 
-This session develops skills in radical historiography by examining local historical struggles. We'll explore how to research your community's radical past, understand patterns across different movements, and connect historical struggles to present-day organizing. The examples given are from Brighton - adapt these frameworks to investigate your own area's history of resistance.
+This session develops skills in radical historiography by examining local historical struggles. We'll explore how to research our community's radical past, understand patterns across different movements, and connect historical struggles to present-day organizing. The examples given are from Brighton - adapt these frameworks to investigate our own area's history of resistance.
 
 </div>
 
@@ -66,7 +68,7 @@ Every place has a hidden history of resistance beneath official narratives.
 
 ## Three Historical Case Studies
 
-**Note:** These examples are from Brighton. Research similar moments in your own locality - unemployed workers' movements, squatting/housing struggles, and mass civil disobedience campaigns have occurred in most communities.
+**Note:** These examples are from Brighton. Research similar moments in our own locality - unemployed workers' movements, squatting/housing struggles, and mass civil disobedience campaigns have occurred in most communities.
 
 <div class="traditions-grid">
 
@@ -212,7 +214,7 @@ Official history won't preserve these stories - we must. Every interview, every 
 - Feminist and LGBTQ+ organizing
 - Anti-austerity campaigns
 
-**Example Timeline Format (Brighton):**
+**Example Timeline Format:**
 
 - **1820s:** Agricultural workers' resistance (Swing Riots)
 - **1911:** Women's suffrage demonstrations
@@ -254,7 +256,7 @@ Official history won't preserve these stories - we must. Every interview, every 
 - Community elders and long-time activists
 - Networks connecting past and present organizers
 
-**Brighton Example Resources:** The Keep (East Sussex Records), QueenSpark Books (oral histories), Brighton Voice archives
+**Example Resources:** Local archives, oral history projects, radical newspaper collections
 
 *Identify equivalent resources in your locality.*
 
@@ -289,7 +291,7 @@ Identify ONE site of counter-power in your locality today. This could be:
 - Alternative economy (cooperatives, time banks, commons)
 - Knowledge commons (radical libraries, skill shares, study groups)
 
-**Brighton examples:** Vegan Food Bank, Cowley Club, community gardens, time banks
+**Local examples:** Food banks, community centers, community gardens, time banks
 
 Be ready to place it on our collective map and explain its significance.
 

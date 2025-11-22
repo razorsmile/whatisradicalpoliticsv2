@@ -93,12 +93,13 @@ There are scripts prepared for each session.  These should enable you to have en
 - Prepare any physical materials or handouts
 - Set up the space to encourage discussion
 - Consider accessibility needs of participants
-- Adapt examples to your local context - this is particularly the case with Session 3 and 4, which involve participants in doing their own research work grounded in their local context.
+- Adapt examples to your local context - **this is particularly the case with Session 3 and 4**, which involve participants in doing their own research work grounded in their local context.  For these sessions the facilitator must ensure they have some examples of both history and local organisation - if you don't know then talk to your comrades.  Someone locally will have this knowledge!
 
 ### During Sessions
 
+- You can use the Session pages as a form of presentation display.  You should be able to scroll to the appropriate section on a full screen display.
 - Start with introductions and ground rules (contained in Handout 1)
-- Use the jargon buster to demystify academic terms - ask about other terms that might be added to open up the conversation.
+- Use the **jargon buster** to demystify academic terms - ask about other terms that might be added to open up the conversation - return to it at the beginning of the second hour after the break each time.
 - Encourage questions and challenges 
 - Make space for different perspectives 
 - Document insights and questions that emerge

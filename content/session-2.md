@@ -2,7 +2,9 @@
 title: "In, Against, and Beyond the State"
 subtitle: "Political Theory Lens"
 description: "How do different radical traditions relate to state power?"
+type: "session"
 week_badge: "WEEK 2"
+weight: 2
 ---
 
 <div class="section-block">
@@ -24,6 +26,20 @@ Tonight's framework comes from the phrase used by various movements: "In, Agains
 **IN THE STATE** 🏛️ | **AGAINST** ✊ | **BEYOND** 🌱
 
 Working through electoral politics and state institutions | Confronting state power through resistance and disruption | Building parallel institutions and counter-power
+
+<div class="triangle-container">
+        <svg viewBox="0 0 300 260" style="width: 100%; height: auto; max-width: 300px;">
+            <defs>
+                <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+                    <feDropShadow dx="1" dy="1" stdDeviation="2" flood-opacity="0.5"/>
+                </filter>
+            </defs>
+            <polygon points="150,0 0,260 300,260" fill="#87CEEB"/>
+            <text x="150" y="30" text-anchor="middle" fill="black" font-weight="bold" font-size="16" filter="url(#shadow)">IN THE STATE</text>
+            <text x="30" y="250" text-anchor="middle" fill="black" font-weight="bold" font-size="14" filter="url(#shadow)">AGAINST</text>
+            <text x="270" y="250" text-anchor="middle" fill="black" font-weight="bold" font-size="14" filter="url(#shadow)">BEYOND</text>
+        </svg>
+    </div>
 
 </div>
 
@@ -202,7 +218,7 @@ Do we focus on modeling the future society now (beyond) or seizing levers of cha
 
 **Local vs National?**
 
-Brighton City Council has limited powers. Can municipal socialism work within national constraints? Or must change happen at every scale simultaneously?
+Our local council has limited powers. Can municipal socialism work within national constraints? Or must change happen at every scale simultaneously?
 
 </div>
 

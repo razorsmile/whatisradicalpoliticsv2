@@ -2,7 +2,11 @@
 <section class="session-hero">
   <div class="session-hero-content">
     {{ if .Params.week_badge }}
-    <span class="week-badge">{{ .Params.week_badge }}</span>
+    {{ $weekNum := .Params.weight }}
+    {{ $facilitatorLink := printf "/facilitator-week-%d/" $weekNum }}
+    <a href="{{ $facilitatorLink }}" class="week-badge" title="View facilitator script for this week">
+      {{ .Params.week_badge }} - Facilitator Script
+    </a>
     {{ end }}
     <h1>{{ .Title }}</h1>
     {{ if .Params.subtitle }}

@@ -3,19 +3,35 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>{{ .Site.Title }}</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css">
-  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-  <script src="/js/background-pattern.js" defer></script>
-  <script src="/js/typewriter.js" defer></script>
-  <script src="/js/burger-menu.js" defer></script>
+  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+  
+  <!-- Block all search engines and web crawlers -->
+  <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex, nocache">
+  <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+  <meta name="bingbot" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+  
+  {{ $styles := resources.Get "css/style.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}">
+  
+  {{ $typewriter := resources.Get "js/vendor/typewriter-effect.js" | minify | fingerprint }}
+  <script src="{{ $typewriter.RelPermalink }}" integrity="{{ $typewriter.Data.Integrity }}"></script>
+  
+  {{ $backgroundPattern := resources.Get "js/background-pattern.js" | minify | fingerprint }}
+  <script src="{{ $backgroundPattern.RelPermalink }}" integrity="{{ $backgroundPattern.Data.Integrity }}" defer></script>
+  
+  {{ $typewriterInit := resources.Get "js/typewriter.js" | minify | fingerprint }}
+  <script src="{{ $typewriterInit.RelPermalink }}" integrity="{{ $typewriterInit.Data.Integrity }}" defer></script>
+  
+  {{ $burgerMenu := resources.Get "js/burger-menu.js" | minify | fingerprint }}
+  <script src="{{ $burgerMenu.RelPermalink }}" integrity="{{ $burgerMenu.Data.Integrity }}" defer></script>
+  
+  {{ $mainJs := resources.Get "js/main.js" | minify | fingerprint }}
+  <script src="{{ $mainJs.RelPermalink }}" integrity="{{ $mainJs.Data.Integrity }}" defer></script>
 </head>
 <body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
   {{ partial "header.html" . }}
-  <main>
+  <main id="main-content">
     {{ block "main" . }}{{ end }}
   </main>
   {{ partial "footer.html" . }}

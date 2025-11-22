@@ -1,22 +1,28 @@
-<nav class="nav">
+<nav class="nav" role="navigation" aria-label="Main navigation">
     <ul class="nav-links">
-    <li><a href="/#about">About</a></li>
-    <li><a href="/#course-overview">Course Overview</a></li>
+    <li><a href="/#about" aria-label="Jump to about section">About</a></li>
+    <li><a href="/#course-overview" aria-label="Jump to course overview section">Course Overview</a></li>
     <li class="dropdown">
-      <a href="#" class="dropdown-toggle">Sessions</a>
-      <ul class="dropdown-menu">
-        <li><a href="/session-1/">Week 1: Radical Traditions</a></li>
-        <li><a href="/session-2/">Week 2: State Power</a></li>
-        <li><a href="/session-3/">Week 3: Our Radical History</a></li>
-        <li><a href="/session-4/">Week 4: Counter-Power</a></li>
+      <a href="#" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false" aria-label="Sessions menu">
+        Sessions
+        <span class="sr-only">Press Enter or Space to open menu</span>
+      </a>
+      <ul class="dropdown-menu" role="menu">
+        <li role="menuitem"><a href="/session-1/">Week 1: Radical Traditions</a></li>
+        <li role="menuitem"><a href="/session-2/">Week 2: State Power</a></li>
+        <li role="menuitem"><a href="/session-3/">Week 3: Our Radical History</a></li>
+        <li role="menuitem"><a href="/session-4/">Week 4: Counter-Power</a></li>
       </ul>
     </li>
     <li class="dropdown">
-      <a href="#" class="dropdown-toggle">Course Materials</a>
-      <ul class="dropdown-menu">
-        <li><a href="/facilitatorguide/">Facilitators Guide</a></li>
-        <li><a href="#">Handouts</a></li>
-        <li><a href="#">Resources</a></li>
+      <a href="#" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false" aria-label="Course materials menu">
+        Course Materials
+        <span class="sr-only">Press Enter or Space to open menu</span>
+      </a>
+      <ul class="dropdown-menu" role="menu">
+        <li role="menuitem"><a href="/facilitatorguide/">Facilitators Guide</a></li>
+        <li role="menuitem"><a href="/handouts/">Handouts</a></li>
+        <li role="menuitem"><a href="/downloads/radical-politics-course.zip" download><span aria-hidden="true">📥</span> Download Full Course (Offline)</a></li>
       </ul>
     </li>
   </ul>

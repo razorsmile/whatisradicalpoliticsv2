@@ -3,7 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "hugo server -D --disableFastRender",
-    "build": "hugo"
+    "serve": "hugo server",
+    "build": "hugo --minify",
+    "clean": "node scripts/clean.js",
+    "package": "node scripts/package.js",
+    "dev": "npm run clean && npm run build && npm run package && hugo server"
   }
 }

@@ -294,11 +294,18 @@ title = "Your Course Name"
   author = "Your Name"
 ```
 
-If deploying to a different subdirectory:
+**Important:** Update the production subdirectory path before deploying:
 ```toml
 # config/production/config.toml
 baseURL = "/your-subdirectory/"
+
+# Examples:
+# baseURL = "/wrpv2/"                  → yoursite.com/wrpv2/
+# baseURL = "/radical-politics/"       → yoursite.com/radical-politics/
+# baseURL = "/courses/radical/"        → yoursite.com/courses/radical/
 ```
+
+After changing the baseURL, run `npm run deploy` and copy `public/` contents to the matching subdirectory on your server. The offline build (`npm run package`) is unaffected and always uses relative URLs.
 
 Update footer in `layouts/partials/footer.html`:
 ```html

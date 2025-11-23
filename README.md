@@ -37,72 +37,16 @@ Survey existing organizing in your locality and identify opportunities
 
 ### Built With
 
-- **Hugo** (v0.152.2) - Static site generator
+- **Hugo** (v0.152.2) - Static site generator (This is a learning project for me, getting to grips with using Hugo)
 - **Custom CSS** - No frameworks, optimized for print and screen
 - **Vanilla JavaScript** - Minimal dependencies for offline reliability
 - **Self-hosted assets** - No external CDN dependencies
 
-### Architecture
-
-```
-whatisradicalpoliticsV2/
-├── config/              # Hugo configuration (environment-specific)
-│   ├── _default/        # Shared settings
-│   │   └── config.toml
-│   ├── production/      # Web deployment config (baseURL = "/wrpv2/")
-│   │   └── config.toml
-│   └── offline/         # Offline/portable config (relative URLs)
-│       └── config.toml
-├── archetypes/          # Content templates
-│   ├── default.md
-│   ├── facilitator.md
-│   ├── handout.md
-│   └── session.md
-├── assets/              # Source files (processed by Hugo Pipes)
-│   ├── css/
-│   │   └── style.css
-│   └── js/
-│       ├── main.js
-│       ├── background-pattern.js
-│       ├── typewriter.js
-│       └── vendor/
-├── content/             # Markdown content files
-│   ├── _index.md        # Homepage
-│   ├── session-[1-4].md # Session pages
-│   ├── facilitator-week-[1-4].md  # Facilitator scripts
-│   ├── handout-[1-11].md          # Course handouts
-│   ├── facilitatorguide.md
-│   └── handouts.md
-├── layouts/             # Hugo templates
-│   ├── _default/
-│   │   ├── baseof.html  # Base template
-│   │   └── single.html  # Generic single page
-│   ├── facilitator/
-│   │   └── single.html  # Facilitator script layout
-│   ├── handout/
-│   │   └── single.html  # Handout layout
-│   ├── page/
-│   │   └── handouts.html # Handouts listing
-│   ├── partials/
-│   │   ├── header.html
-│   │   ├── nav.html
-│   │   └── footer.html
-│   └── index.html       # Homepage template
-├── static/              # Static assets (copied as-is)
-│   ├── fonts/           # Self-hosted fonts
-│   ├── images/          # Site images
-│   ├── downloads/       # Generated ZIP packages (git-ignored)
-│   └── robots.txt
-├── scripts/             # Build automation (Node.js)
-│   ├── clean.js         # Remove build artifacts
-│   └── package.js       # Create offline ZIP package
-├── package.json         # NPM scripts
-└── README.md            # This file
 ```
 
 ### Key Features
 
-✅ **Hugo Pipes Asset Processing**: CSS and JS minified and optimized  
+✅ **Hugo Pipes Asset Processing**: CSS and JS minified and optimized (no fingerprinting used as conficts with offline use of the downloadable site)
 ✅ **Offline-Ready**: All assets self-hosted, relative URLs  
 ✅ **WCAG 2.1 AA Compliant**: Full keyboard navigation, ARIA labels, screen reader support  
 ✅ **Print-Optimized**: Special layouts for printing handouts and facilitator scripts  
@@ -110,6 +54,7 @@ whatisradicalpoliticsV2/
 ✅ **SEO Blocked**: Comprehensive crawler blocking for privacy  
 ✅ **Downloadable Package**: Users can download entire site for offline use  
 
+```
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -128,7 +73,7 @@ cd whatisradicalpoliticsV2
 npm install
 
 # Start the development server
-npm run serve
+npm run dev
 
 # Visit http://localhost:1313/
 ```
@@ -149,12 +94,23 @@ npm run package
 
 **Production Build** (for web deployment in subdirectory):
 ```bash
-# Build with absolute URLs for /wrpv2/ subdirectory
+# Build with absolute URLs for /wirpv2/ subdirectory
 npm run deploy
 
 # Output will be in the /public directory
-# Copy contents to /var/www/yoursite.com/wrpv2/
+# Copy contents to /var/www/yoursite.com/wirpv2/
 ```
+To alter the sub-directory name you will deploy to you need to alter the file /production/config.toml - change the base url (line 1) to your subdirectory name
+
+**Workflow for production build with download package that uses relative URLs**
+
+1. Create offline package
+npm run package
+
+2. Build for deployment (includes the ZIP from step 1)
+npm run deploy
+
+3. Copy public/* to your server subdirectory.  The deployed site will have the downloadable ZIP available
 
 **Note:** The build system uses Hugo environments to handle URL paths correctly:
 - `offline` environment: Uses relative URLs (`./css/style.css`) for offline functionality
@@ -180,7 +136,7 @@ hugo new content/facilitator-week-5.md
 ### Editing Existing Content
 
 1. Edit markdown files in the `content/` directory
-2. The dev server auto-reloads with changes
+2. If the dev server is running it auto-reloads with changes
 3. All content uses frontmatter for metadata
 
 **Example frontmatter:**
@@ -266,6 +222,11 @@ git remote add origin https://github.com/YOUR-USERNAME/YOUR-FORK.git
 
 **Key files to adapt:**
 
+- **Week 2 Housing Examples**: Use your local housing data
+  - Edit `content/session-2.md`
+  - Edit `content/facilitator-week-2.md`
+  - Edit `content/handout-5.md`
+
 - **Week 3 Historical Examples**: Replace Brighton examples with your area's history
   - Edit `content/session-3.md`
   - Edit `content/facilitator-week-3.md`
@@ -274,11 +235,6 @@ git remote add origin https://github.com/YOUR-USERNAME/YOUR-FORK.git
 - **Week 4 Local Organizations**: Map organizing in your area
   - Edit `content/session-4.md`
   - Edit `content/facilitator-week-4.md`
-
-- **Week 2 Housing Examples**: Use your local housing data
-  - Edit `content/session-2.md`
-  - Edit `content/facilitator-week-2.md`
-  - Edit `content/handout-5.md`
 
 - **Jargon Buster**: Add locally relevant terms
   - Edit `content/handout-3.md`
@@ -300,7 +256,7 @@ title = "Your Course Name"
 baseURL = "/your-subdirectory/"
 
 # Examples:
-# baseURL = "/wrpv2/"                  → yoursite.com/wrpv2/
+# baseURL = "/wirpv2/"                  → yoursite.com/wirpv2/
 # baseURL = "/radical-politics/"       → yoursite.com/radical-politics/
 # baseURL = "/courses/radical/"        → yoursite.com/courses/radical/
 ```
@@ -479,7 +435,7 @@ Contributions welcome! To contribute:
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/improvement`)
 3. Make your changes
-4. Test thoroughly (`npm run serve`)
+4. Test thoroughly (`npm run dev`)
 5. Commit with clear messages
 6. Push and create a Pull Request
 
@@ -488,6 +444,7 @@ Contributions welcome! To contribute:
 - All changes maintain offline functionality
 - Accessibility standards (WCAG 2.1 AA) maintained
 - Code follows existing patterns
+- Test with `npm run dev` before submitting
 
 ## 📞 Contact & Support
 

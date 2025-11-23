@@ -1,4 +1,4 @@
-baseURL = "/wrpv2/"
+baseURL = "/wirpv2/"
 
 # Use absolute URLs for deployed website
 relativeURLs = false

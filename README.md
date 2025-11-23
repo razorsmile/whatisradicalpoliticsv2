@@ -57,7 +57,6 @@ whatisradicalpoliticsV2/
 │   └── js/
 │       ├── main.js
 │       ├── background-pattern.js
-│       ├── burger-menu.js
 │       ├── typewriter.js
 │       └── vendor/
 ├── content/             # Markdown content files
@@ -97,7 +96,7 @@ whatisradicalpoliticsV2/
 
 ### Key Features
 
-✅ **Hugo Pipes Asset Processing**: CSS and JS minified, fingerprinted, with integrity hashes  
+✅ **Hugo Pipes Asset Processing**: CSS and JS minified and optimized  
 ✅ **Offline-Ready**: All assets self-hosted, relative URLs  
 ✅ **WCAG 2.1 AA Compliant**: Full keyboard navigation, ARIA labels, screen reader support  
 ✅ **Print-Optimized**: Special layouts for printing handouts and facilitator scripts  
@@ -392,7 +391,7 @@ hugo server
 ### Assets not loading
 - Check files are in `assets/` not `static/`
 - Hugo Pipes processes `assets/`, not `static/`
-- CSS/JS belong in `assets/` for minification and fingerprinting
+- CSS/JS belong in `assets/` for minification and optimization
 - Only fonts, images, robots.txt, and downloads belong in `static/`
 
 ### ZIP package missing or too large

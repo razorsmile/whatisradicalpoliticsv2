@@ -10,23 +10,20 @@
   <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
   <meta name="bingbot" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
   
-  {{ $styles := resources.Get "css/style.css" | minify | fingerprint }}
-  <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}">
+  {{ $styles := resources.Get "css/style.css" | minify }}
+  <link rel="stylesheet" href="{{ $styles.RelPermalink }}">
   
-  {{ $typewriter := resources.Get "js/vendor/typewriter-effect.js" | minify | fingerprint }}
-  <script src="{{ $typewriter.RelPermalink }}" integrity="{{ $typewriter.Data.Integrity }}"></script>
+  {{ $typewriter := resources.Get "js/vendor/typewriter-effect.js" | minify }}
+  <script src="{{ $typewriter.RelPermalink }}"></script>
   
-  {{ $backgroundPattern := resources.Get "js/background-pattern.js" | minify | fingerprint }}
-  <script src="{{ $backgroundPattern.RelPermalink }}" integrity="{{ $backgroundPattern.Data.Integrity }}" defer></script>
+  {{ $backgroundPattern := resources.Get "js/background-pattern.js" | minify }}
+  <script src="{{ $backgroundPattern.RelPermalink }}" defer></script>
   
-  {{ $typewriterInit := resources.Get "js/typewriter.js" | minify | fingerprint }}
-  <script src="{{ $typewriterInit.RelPermalink }}" integrity="{{ $typewriterInit.Data.Integrity }}" defer></script>
+  {{ $typewriterInit := resources.Get "js/typewriter.js" | minify }}
+  <script src="{{ $typewriterInit.RelPermalink }}" defer></script>
   
-  {{ $burgerMenu := resources.Get "js/burger-menu.js" | minify | fingerprint }}
-  <script src="{{ $burgerMenu.RelPermalink }}" integrity="{{ $burgerMenu.Data.Integrity }}" defer></script>
-  
-  {{ $mainJs := resources.Get "js/main.js" | minify | fingerprint }}
-  <script src="{{ $mainJs.RelPermalink }}" integrity="{{ $mainJs.Data.Integrity }}" defer></script>
+  {{ $mainJs := resources.Get "js/main.js" | minify }}
+  <script src="{{ $mainJs.RelPermalink }}" defer></script>
 </head>
 <body>
   <a href="#main-content" class="skip-link">Skip to main content</a>

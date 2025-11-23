@@ -1,0 +1,5 @@
+baseURL = "/wrpv2/"
+
+# Use absolute URLs for deployed website
+relativeURLs = false
+canonifyURLs = false

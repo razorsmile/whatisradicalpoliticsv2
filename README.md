@@ -46,6 +46,13 @@ Survey existing organizing in your locality and identify opportunities
 
 ```
 whatisradicalpoliticsV2/
+├── config/              # Hugo configuration (environment-specific)
+│   ├── _default/        # Shared settings
+│   │   └── config.toml
+│   ├── production/      # Web deployment config (baseURL = "/wrpv2/")
+│   │   └── config.toml
+│   └── offline/         # Offline/portable config (relative URLs)
+│       └── config.toml
 ├── archetypes/          # Content templates
 │   ├── default.md
 │   ├── facilitator.md
@@ -89,7 +96,6 @@ whatisradicalpoliticsV2/
 ├── scripts/             # Build automation (Node.js)
 │   ├── clean.js         # Remove build artifacts
 │   └── package.js       # Create offline ZIP package
-├── config.toml          # Hugo configuration
 ├── package.json         # NPM scripts
 └── README.md            # This file
 ```
@@ -127,25 +133,32 @@ npm run serve
 # Visit http://localhost:1313/
 ```
 
-### Build for Production
+### Build Options
 
+This project supports two build configurations:
+
+**Offline/Portable Build** (for downloadable ZIP package):
 ```bash
-# Build the static site
-npm run build
+# Build with relative URLs for offline use
+npm run build:offline
+
+# Or create the complete downloadable package
+npm run package
+# Creates static/downloads/radical-politics-course.zip (~2.5 MB)
+```
+
+**Production Build** (for web deployment in subdirectory):
+```bash
+# Build with absolute URLs for /wrpv2/ subdirectory
+npm run deploy
 
 # Output will be in the /public directory
+# Copy contents to /var/www/yoursite.com/wrpv2/
 ```
 
-### Create Offline Download Package
-
-```bash
-# Generate ZIP package for distribution
-npm run package
-
-# Creates static/downloads/radical-politics-course.zip (~2.5 MB)
-# Available at /downloads/radical-politics-course.zip on the site
-# Note: Download folder is automatically excluded to prevent recursive packaging
-```
+**Note:** The build system uses Hugo environments to handle URL paths correctly:
+- `offline` environment: Uses relative URLs (`./css/style.css`) for offline functionality
+- `production` environment: Uses absolute URLs (`/wrpv2/css/style.css`) for subdirectory hosting
 
 ## 📝 Content Workflow
 
@@ -195,18 +208,20 @@ weight: 1
 
 ```bash
 # 1. Start dev server to preview changes
-npm run serve
+npm run dev
 
 # 2. Edit content files in /content directory
 # 3. Changes auto-reload in browser
 
-# 4. When satisfied, build for production
-npm run build
+# 4. When satisfied, choose your build target:
 
-# 5. Create updated download package
+# For downloadable package:
 npm run package
 
-# 6. Commit changes
+# For web deployment:
+npm run deploy
+
+# 5. Commit changes
 git add .
 git commit -m "Updated session 2 content"
 git push
@@ -214,12 +229,25 @@ git push
 
 ### Deployment
 
-The `public/` directory contains the complete static site. Deploy by:
+The `public/` directory contains the complete static site. Choose the appropriate build:
 
-- **GitHub Pages**: Push `public/` to gh-pages branch
-- **Netlify**: Connect repo, auto-builds on push
-- **Manual**: Upload `public/` contents to any web host
-- **Offline**: Share `radical-politics-course.zip` directly
+**For Web Hosting (subdirectory deployment):**
+```bash
+npm run deploy
+# Copy public/* to /var/www/yoursite.com/wrpv2/
+```
+
+**For Downloadable Package:**
+```bash
+npm run package
+# Share static/downloads/radical-politics-course.zip
+```
+
+**Deployment Options:**
+- **Manual**: Run `npm run deploy`, upload `public/` contents to web host subdirectory
+- **GitHub Pages**: Run `npm run deploy`, push `public/` to gh-pages branch
+- **Netlify**: Configure build command as `npm run deploy` in Netlify settings
+- **Offline Distribution**: Run `npm run package`, share the ZIP file directly
 
 ## 🍴 Forking for Local Adaptation
 
@@ -258,12 +286,18 @@ git remote add origin https://github.com/YOUR-USERNAME/YOUR-FORK.git
 ### 3. Customize Branding
 
 ```toml
-# config.toml
+# config/_default/config.toml
 title = "Your Course Name"
 
 [params]
   description = "Your description"
   author = "Your Name"
+```
+
+If deploying to a different subdirectory:
+```toml
+# config/production/config.toml
+baseURL = "/your-subdirectory/"
 ```
 
 Update footer in `layouts/partials/footer.html`:
@@ -279,8 +313,11 @@ Update footer in `layouts/partials/footer.html`:
 ### 5. Build Your Version
 
 ```bash
-npm run build
+# For offline package
 npm run package
+
+# For web deployment
+npm run deploy
 ```
 
 ### 6. Share Your Adaptation
@@ -330,7 +367,9 @@ Print-specific CSS is in `assets/css/style.css` under `@media print`.
 
 | File | Purpose |
 |------|---------|
-| `config.toml` | Hugo configuration |
+| `config/_default/config.toml` | Shared Hugo configuration |
+| `config/production/config.toml` | Production deployment settings |
+| `config/offline/config.toml` | Offline/portable build settings |
 | `layouts/_default/baseof.html` | Base HTML template |
 | `layouts/partials/nav.html` | Navigation menu |
 | `assets/css/style.css` | All site styles |
@@ -347,11 +386,12 @@ Print-specific CSS is in `assets/css/style.css` under `@media print`.
 
 ```json
 {
-  "serve": "hugo server",                    // Start dev server
-  "build": "hugo --minify",                  // Build production site
-  "clean": "node scripts/clean.js",          // Remove build artifacts
-  "package": "node scripts/package.js",      // Create offline ZIP package
-  "dev": "npm run clean && npm run build && npm run package && npm run serve"
+  "dev": "hugo server",                                          // Start dev server
+  "build:production": "hugo --environment production --minify",  // Build for web deployment
+  "build:offline": "hugo --environment offline --minify",        // Build for offline use
+  "clean": "node scripts/clean.js",                              // Remove build artifacts
+  "package": "npm run build:offline && node scripts/package.js", // Create offline ZIP package
+  "deploy": "npm run build:production"                           // Build for production deployment
 }
 ```
 

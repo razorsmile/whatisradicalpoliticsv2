@@ -3,10 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "hugo server",
-    "build": "hugo --minify",
+    "dev": "hugo server",
+    "build:production": "hugo --environment production --minify",
+    "build:offline": "hugo --environment offline --minify",
     "clean": "node scripts/clean.js",
-    "package": "node scripts/package.js",
-    "dev": "npm run clean && npm run build && npm run package && hugo server"
+    "package": "npm run build:offline && node scripts/package.js",
+    "deploy": "npm run build:production"
   }
 }

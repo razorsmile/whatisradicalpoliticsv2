@@ -1,0 +1,5 @@
+baseURL = "/"
+
+# Enable relative URLs for offline/portable use
+relativeURLs = true
+canonifyURLs = false

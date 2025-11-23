@@ -1,0 +1,15 @@
+languageCode = "en-us"
+title = "radical // education"
+
+# Disable taxonomies, sitemap, and RSS generation
+disableKinds = ["taxonomy", "term", "sitemap", "RSS"]
+
+# Ignore the downloads folder to prevent recursive ZIP inclusion
+ignoreFiles = ["static/downloads/.*\\.zip$"]
+
+[params]
+  description = "Critical thinking for radical change"
+  author = "radical // education"
+
+[markup.goldmark.renderer]
+  unsafe = true

@@ -46,13 +46,12 @@ Survey existing organizing in your locality and identify opportunities
 
 ### Key Features
 
-✅ **Hugo Pipes Asset Processing**: CSS and JS minified and optimized (no fingerprinting used as conficts with offline use of the downloadable site)
-✅ **Offline-Ready**: All assets self-hosted, relative URLs  
-✅ **WCAG 2.1 AA Compliant**: Full keyboard navigation, ARIA labels, screen reader support  
-✅ **Print-Optimized**: Special layouts for printing handouts and facilitator scripts  
-✅ **Responsive Design**: Works on desktop, tablet, and mobile  
-✅ **SEO Blocked**: Comprehensive crawler blocking for privacy  
-✅ **Downloadable Package**: Users can download entire site for offline use  
+✅ **Hugo Pipes Asset Processing**: CSS and JS minified and optimized
+✅ **Self-hosted Assets**: No external CDN dependencies
+✅ **WCAG 2.1 AA Compliant**: Full keyboard navigation, ARIA labels, screen reader support
+✅ **Print-Optimized**: Special layouts for printing handouts and facilitator scripts
+✅ **Responsive Design**: Works on desktop, tablet, and mobile
+✅ **SEO Blocked**: Comprehensive crawler blocking for privacy
 
 ```
 ## 🚀 Getting Started
@@ -60,7 +59,7 @@ Survey existing organizing in your locality and identify opportunities
 ### Prerequisites
 
 - **Hugo Extended** v0.152.2 or later
-- **Node.js** and npm (for build scripts - cross-platform)
+- **Node.js** and npm (optional, for build scripts)
 
 ### Installation
 
@@ -69,7 +68,7 @@ Survey existing organizing in your locality and identify opportunities
 git clone https://github.com/razorsmile/whatisradicalpoliticsV2.git
 cd whatisradicalpoliticsV2
 
-# Install dependencies (if any)
+# Install dependencies
 npm install
 
 # Start the development server
@@ -78,43 +77,26 @@ npm run dev
 # Visit http://localhost:1313/
 ```
 
-### Build Options
+### Build & Deploy
 
-This project supports two build configurations:
+This project is configured to deploy to **https://systemdecomposition.org/wirpv2/**
 
-**Offline/Portable Build** (for downloadable ZIP package):
 ```bash
-# Build with relative URLs for offline use
-npm run build:offline
+# Build for production
+npm run build
 
-# Or create the complete downloadable package
-npm run package
-# Creates static/downloads/radical-politics-course.zip (~2.5 MB)
-```
-
-**Production Build** (for web deployment in subdirectory):
-```bash
-# Build with absolute URLs for /wirpv2/ subdirectory
+# Or build and clean in one step
 npm run deploy
 
 # Output will be in the /public directory
 # Copy contents to /var/www/yoursite.com/wirpv2/
 ```
-To alter the sub-directory name you will deploy to you need to alter the file /production/config.toml - change the base url (line 1) to your subdirectory name
 
-**Workflow for production build with download package that uses relative URLs**
-
-1. Create offline package
-npm run package
-
-2. Build for deployment (includes the ZIP from step 1)
-npm run deploy
-
-3. Copy public/* to your server subdirectory.  The deployed site will have the downloadable ZIP available
-
-**Note:** The build system uses Hugo environments to handle URL paths correctly:
-- `offline` environment: Uses relative URLs (`./css/style.css`) for offline functionality
-- `production` environment: Uses absolute URLs (`/wrpv2/css/style.css`) for subdirectory hosting
+**To change the deployment subdirectory:**
+Edit `config/_default/config.toml` and change the `baseURL` on line 1:
+```toml
+baseURL = "/your-subdirectory/"
+```
 
 ## 📝 Content Workflow
 
@@ -185,25 +167,21 @@ git push
 
 ### Deployment
 
-The `public/` directory contains the complete static site. Choose the appropriate build:
+The `public/` directory contains the complete static site after building.
 
-**For Web Hosting (subdirectory deployment):**
+**Deployment Steps:**
 ```bash
+# Build the site
 npm run deploy
-# Copy public/* to /var/www/yoursite.com/wrpv2/
-```
 
-**For Downloadable Package:**
-```bash
-npm run package
-# Share static/downloads/radical-politics-course.zip
+# Upload public/* to your web server
+# Example: Copy to /var/www/yoursite.com/wirpv2/
 ```
 
 **Deployment Options:**
-- **Manual**: Run `npm run deploy`, upload `public/` contents to web host subdirectory
-- **GitHub Pages**: Run `npm run deploy`, push `public/` to gh-pages branch
-- **Netlify**: Configure build command as `npm run deploy` in Netlify settings
-- **Offline Distribution**: Run `npm run package`, share the ZIP file directly
+- **Manual**: Run `npm run deploy`, upload `public/` contents to your web host
+- **GitHub Pages**: Push `public/` to gh-pages branch
+- **Netlify**: Configure build command as `npm run build` in Netlify settings
 
 ## 🍴 Forking for Local Adaptation
 
@@ -250,9 +228,9 @@ title = "Your Course Name"
   author = "Your Name"
 ```
 
-**Important:** Update the production subdirectory path before deploying:
+**Important:** Update the deployment subdirectory path before deploying:
 ```toml
-# config/production/config.toml
+# config/_default/config.toml
 baseURL = "/your-subdirectory/"
 
 # Examples:
@@ -261,7 +239,7 @@ baseURL = "/your-subdirectory/"
 # baseURL = "/courses/radical/"        → yoursite.com/courses/radical/
 ```
 
-After changing the baseURL, run `npm run deploy` and copy `public/` contents to the matching subdirectory on your server. The offline build (`npm run package`) is unaffected and always uses relative URLs.
+After changing the baseURL, run `npm run deploy` and copy `public/` contents to the matching subdirectory on your server.
 
 Update footer in `layouts/partials/footer.html`:
 ```html
@@ -276,10 +254,7 @@ Update footer in `layouts/partials/footer.html`:
 ### 5. Build Your Version
 
 ```bash
-# For offline package
-npm run package
-
-# For web deployment
+# Build and deploy
 npm run deploy
 ```
 
@@ -349,29 +324,20 @@ Print-specific CSS is in `assets/css/style.css` under `@media print`.
 
 ```json
 {
-  "dev": "hugo server",                                          // Start dev server
-  "build:production": "hugo --environment production --minify",  // Build for web deployment
-  "build:offline": "hugo --environment offline --minify",        // Build for offline use
-  "clean": "node scripts/clean.js",                              // Remove build artifacts
-  "package": "npm run build:offline && node scripts/package.js", // Create offline ZIP package
-  "deploy": "npm run build:production"                           // Build for production deployment
+  "dev": "hugo server",                        // Start dev server
+  "build": "hugo --minify",                    // Build for deployment
+  "clean": "...",                              // Remove build artifacts
+  "deploy": "npm run clean && npm run build"   // Clean and build for deployment
 }
 ```
 
 ## 🌍 Cross-Platform Support
 
-All build scripts use Node.js for cross-platform compatibility:
+The project works on Windows, Mac, and Linux:
 
-- **scripts/clean.js**: Removes `public/`, `resources/`, `.hugo_build.lock`
-- **scripts/package.js**: Auto-detects platform and uses appropriate compression
-  - Windows: PowerShell `Compress-Archive`
-  - Mac/Linux: `zip` command
-
-**Download Package Prevention of Recursion:**
-
-1. **config.toml**: `ignoreFiles = ["static/downloads/.*\\.zip$"]` tells Hugo to ignore existing packages
-2. **scripts/package.js**: Creates temporary directory excluding `downloads/` folder before packaging
-3. Result: Clean 2.54 MB package instead of 5+ MB recursive package
+- **Hugo**: Cross-platform static site generator
+- **NPM scripts**: Use PowerShell commands on Windows, adapt for Unix systems if needed
+- **No build dependencies**: Pure Hugo, no complex tooling required
 
 ## 🐛 Troubleshooting
 
@@ -387,30 +353,15 @@ hugo server -p 1314
 ### Changes not appearing
 ```bash
 # Clear Hugo cache
-rm -rf public resources .hugo_build.lock
-hugo server
+npm run clean
+npm run dev
 ```
 
 ### Assets not loading
 - Check files are in `assets/` not `static/`
 - Hugo Pipes processes `assets/`, not `static/`
 - CSS/JS belong in `assets/` for minification and optimization
-- Only fonts, images, robots.txt, and downloads belong in `static/`
-
-### ZIP package missing or too large
-```bash
-# Ensure download directory exists
-mkdir -p static/downloads
-
-# Run package script
-npm run package
-
-# Package should be ~2.5 MB
-# If larger (5+ MB), the download is recursively packaged
-# This is prevented by:
-# 1. config.toml: ignoreFiles = ["static/downloads/.*\\.zip$"]
-# 2. scripts/package.js: Creates temp directory excluding downloads/
-```
+- Only fonts, images, and robots.txt belong in `static/`
 
 ## 📄 License
 
@@ -441,7 +392,6 @@ Contributions welcome! To contribute:
 
 **Please ensure:**
 - Content aligns with course philosophy
-- All changes maintain offline functionality
 - Accessibility standards (WCAG 2.1 AA) maintained
 - Code follows existing patterns
 - Test with `npm run dev` before submitting
@@ -469,4 +419,4 @@ For those interested in the pedagogical approach:
 
 ---
 
-**Built with Hugo • Licensed under GNU FDL 1.3 • Designed for offline use**
+**Built with Hugo • Licensed under GNU FDL 1.3 • Free to adapt and share**

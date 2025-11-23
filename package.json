@@ -4,10 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "hugo server",
-    "build:production": "hugo --environment production --minify",
-    "build:offline": "hugo --environment offline --minify",
-    "clean": "node scripts/clean.js",
-    "package": "npm run build:offline && node scripts/package.js",
-    "deploy": "npm run build:production"
+    "build": "hugo --minify",
+    "clean": "powershell -Command \"Remove-Item -Recurse -Force public, resources, .hugo_build.lock -ErrorAction SilentlyContinue\"",
+    "deploy": "npm run clean && npm run build"
   }
 }

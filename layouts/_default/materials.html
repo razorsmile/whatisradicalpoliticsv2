@@ -175,9 +175,10 @@
 
     <div class="handouts-grid">
       {{ range where .Site.Pages "Params.type" "handout" }}
+      {{ $handoutPath := printf "/handout-%d/" .Params.weight }}
       <div class="handout-card">
         <div class="handout-header">
-          <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+          <h3><a href="{{ $handoutPath }}">{{ .Title }}</a></h3>
         </div>
         <div class="handout-body">
           {{ if .Params.description }}
@@ -185,7 +186,7 @@
           {{ end }}
         </div>
         <div class="handout-footer">
-          <a href="{{ .Permalink }}" class="handout-link">View Handout →</a>
+          <a href="{{ $handoutPath }}" class="handout-link">View Handout →</a>
         </div>
       </div>
       {{ end }}

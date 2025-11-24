@@ -19,7 +19,7 @@ weight: 3
 
 **Root Problem:** Hierarchy and coercive authority
 
-**Solution:** Horizontal organization, mutual aid
+**Solution:** Horizontal organisation, mutual aid
 
 **Local Example:** Radical social centers and mutual aid networks
 
@@ -45,7 +45,7 @@ weight: 3
 
 **Solution:** Decolonize knowledge, institutions, relationships
 
-**Local Example:** Palestine Solidarity campaigns and anti-racist organizing
+**Local Example:** Palestine Solidarity campaigns and anti-racist organising
 
 ### 6. ECOLOGICAL POLITICS (Radical)
 

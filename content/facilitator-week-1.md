@@ -34,7 +34,7 @@ Let's start with introductions - your name, and in one sentence, what brought yo
 
 "Etymologically, 'radical' comes from the Latin 'radix' - meaning root. Radical politics means going to the root causes of problems, not just addressing symptoms.
 
-For example, take homelessness in our area. A non-radical approach might be: build more shelters, provide more services. A radical approach asks: Why does homelessness exist? What systems create it? How might we reorganize society to eliminate it entirely?
+For example, take homelessness in our area. A non-radical approach might be: build more shelters, provide more services. A radical approach asks: Why does homelessness exist? What systems create it? How might we reorganise society to eliminate it entirely?
 
 This 'going to the root' can mean different things:
 
@@ -80,7 +80,7 @@ A city adds more lanes to a congested road. Congestion returns. The surface issu
 
 **2. ANARCHISM**
 
-"Anarchism identifies hierarchy and domination as root problems - not just capitalism but all forms of coercive authority. The solution is horizontal organization and mutual aid. Locally, you might think of autonomous social centers, community food projects, or squatting movements in your area."
+"Anarchism identifies hierarchy and domination as root problems - not just capitalism but all forms of coercive authority. The solution is horizontal organisation and mutual aid. Locally, you might think of autonomous social centers, community food projects, or squatting movements in your area."
 
 **3. COMMUNISM**
 
@@ -88,11 +88,11 @@ A city adds more lanes to a congested road. Congestion returns. The surface issu
 
 **4. FEMINISM AND QUEER LIBERATION**
 
-"Feminism and Queer liberation sees patriarchy as a fundamental system of oppression intersecting with capitalism and racism. It's not just about equal rights but transforming gendered power relations. Reclaim the Night marches, women's refuge movements, Pride organizing, and LGBTQ+ community spaces emerge from this tradition."
+"Feminism and Queer liberation sees patriarchy as a fundamental system of oppression intersecting with capitalism and racism. It's not just about equal rights but transforming gendered power relations. Reclaim the Night marches, women's refuge movements, Pride organising, and LGBTQ+ community spaces emerge from this tradition."
 
 **5. ANTI-RACIST/ANTI-COLONIAL THOUGHT**
 
-"This tradition identifies colonialism and ongoing colonial relations as foundational to current global inequality. It's not just about formal independence but decolonizing knowledge, institutions, and relationships. Locally, Palestine Solidarity groups and other anti-colonial organizing draw on this analysis."
+"This tradition identifies colonialism and ongoing colonial relations as foundational to current global inequality. It's not just about formal independence but decolonizing knowledge, institutions, and relationships. Locally, Palestine Solidarity groups and other anti-colonial organising draw on this analysis."
 
 **6. ECOLOGICAL POLITICS**
 
@@ -162,7 +162,7 @@ These tensions are productive - they push our thinking forward."
 
 **Facilitator Script:**
 
-"For those interested, here's an optional task for next week: Research ONE example of radical politics in your local area's history OR identify ONE current local organization/project that embodies radical politics. Bring a 2-minute sharing next week. This could be:
+"For those interested, here's an optional task for next week: Research ONE example of radical politics in your local area's history OR identify ONE current local organisation/project that embodies radical politics. Bring a 2-minute sharing next week. This could be:
 
 - A historical event or movement
 - A current group or space

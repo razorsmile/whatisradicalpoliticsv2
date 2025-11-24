@@ -26,7 +26,7 @@ weight: 6
 
 1. Whose voices are missing from official accounts?
 2. What patterns of resistance existed?
-3. How did ordinary people organize?
+3. How did ordinary people organise?
 4. What succeeded and what failed? Why?
 5. What can we learn and adapt today?
 

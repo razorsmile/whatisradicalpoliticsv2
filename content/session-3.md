@@ -11,7 +11,7 @@ weight: 3
 
 ## Overview
 
-This session develops skills in radical historiography by examining local historical struggles. We'll explore how to research our community's radical past, understand patterns across different movements, and connect historical struggles to present-day organizing. The examples given are from Brighton - adapt these frameworks to investigate our own area's history of resistance.
+This session develops skills in radical historiography by examining local historical struggles. We'll explore how to research our community's radical past, understand patterns across different movements, and connect historical struggles to present-day organising. The examples given are from Brighton - adapt these frameworks to investigate our own area's history of resistance.
 
 </div>
 
@@ -76,7 +76,7 @@ Every place has a hidden history of resistance beneath official narratives.
 
 ### Example 1: Unemployed Workers' Movements (1930s)
 
-During the Great Depression, organized unemployment movements combined direct action with mutual aid to resist destitution.
+During the Great Depression, organised unemployment movements combined direct action with mutual aid to resist destitution.
 
 **Typical Tactics:**
 - Mass marches to local government offices
@@ -86,7 +86,7 @@ During the Great Depression, organized unemployment movements combined direct ac
 
 **Brighton Example - Battle of Church Street (1934):**
 
-12,000 unemployed workers organized locally. On May Day 1934, 3,000 marched demanding "work or full maintenance." Police attacked, triggering street battles. The movement won increased relief rates and stopped many evictions.
+12,000 unemployed workers organised locally. On May Day 1934, 3,000 marched demanding "work or full maintenance." Police attacked, triggering street battles. The movement won increased relief rates and stopped many evictions.
 
 **Key Lessons:**
 - Combined 'against' tactics (confrontation) with 'beyond' (mutual aid)
@@ -127,7 +127,7 @@ Coordinated refusal to comply with unjust laws can achieve major victories when 
 
 **Typical Elements:**
 - Mass non-compliance with specific law
-- Regular organizing meetings
+- Regular organising meetings
 - Mutual aid and legal support networks
 - Community defense against enforcement
 - Clear demands linking to broader critique
@@ -206,12 +206,12 @@ Official history won't preserve these stories - we must. Every interview, every 
 
 **Your task:** Research and create a timeline of radical struggles in your area. Look for:
 
-- Labor strikes and organizing
+- Labor strikes and organising
 - Housing and land struggles
 - Anti-war and international solidarity movements
 - Civil rights and liberation movements
 - Environmental resistance
-- Feminist and LGBTQ+ organizing
+- Feminist and LGBTQ+ organising
 - Anti-austerity campaigns
 
 **Example Timeline Format:**
@@ -254,7 +254,7 @@ Official history won't preserve these stories - we must. Every interview, every 
 - Interview participants in historical struggles
 - Family stories and community knowledge
 - Community elders and long-time activists
-- Networks connecting past and present organizers
+- Networks connecting past and present organisers
 
 **Example Resources:** Local archives, oral history projects, radical newspaper collections
 
@@ -269,7 +269,7 @@ Official history won't preserve these stories - we must. Every interview, every 
 <ol class="discussion-questions">
 
 <li>Which historical tactics could work today? Which couldn't and why?</li>
-<li>What's different about organizing now versus 50 or 90 years ago in your area?</li>
+<li>What's different about organising now versus 50 or 90 years ago in your area?</li>
 <li>How do we ensure today's struggles become tomorrow's inspiring history?</li>
 <li>What stories of resistance from your own family or community should be preserved?</li>
 <li>What patterns do you see across different historical moments in your locality?</li>
@@ -287,7 +287,7 @@ Official history won't preserve these stories - we must. Every interview, every 
 Identify ONE site of counter-power in your locality today. This could be:
 
 - A mutual aid project (food banks, community fridges, solidarity networks)
-- A self-organized space (social centers, community gardens, occupied spaces)
+- A self-organised space (social centers, community gardens, occupied spaces)
 - Alternative economy (cooperatives, time banks, commons)
 - Knowledge commons (radical libraries, skill shares, study groups)
 

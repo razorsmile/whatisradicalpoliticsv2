@@ -20,7 +20,7 @@ weight: 2
 <dd>How movements in different places/sectors influence each other</dd>
 
 <dt><strong>Civil Society</strong></dt>
-<dd>Organizations and relationships outside state and market</dd>
+<dd>Organisations and relationships outside state and market</dd>
 
 <dt><strong>Class</strong></dt>
 <dd>Your relationship to the means of production (do you own them or work for those who do?)</dd>
@@ -35,7 +35,7 @@ weight: 2
 <dd>Resources governed collectively, neither private nor state property</dd>
 
 <dt><strong>Composition</strong></dt>
-<dd>The technical, social, and political organization of the working class</dd>
+<dd>The technical, social, and political organisation of the working class</dd>
 
 <dt><strong>Counter-Narrative</strong></dt>
 <dd>Alternative to dominant historical accounts</dd>
@@ -71,7 +71,7 @@ weight: 2
 <dd>System of male dominance in social, political, and economic life</dd>
 
 <dt><strong>Prefigurative Politics</strong></dt>
-<dd>Creating the world you want to see in how you organize now</dd>
+<dd>Creating the world you want to see in how you organise now</dd>
 
 <dt><strong>Praxis</strong></dt>
 <dd>Unity of theory and practice - ideas tested through action</dd>

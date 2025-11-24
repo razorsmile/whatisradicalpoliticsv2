@@ -1,6 +1,6 @@
 ---
 title: "Handout 8: Counter-Power Resources Examples"
-description: "Examples of counter-power organizations and projects"
+description: "Examples of counter-power organisations and projects"
 type: "handout"
 weight: 8
 ---
@@ -12,10 +12,10 @@ weight: 8
 - Direct action unions and solidarity networks
 - Community fridges and food banks
 - Mental health peer support groups
-- Migrant solidarity organizations
+- Migrant solidarity organisations
 - Informal childcare networks
 
-## Self-Organized Spaces
+## Self-Organised Spaces
 
 - Radical social centers
 - Community-owned pubs and cafes
@@ -53,10 +53,10 @@ What other local projects, mutual aid, alternative economies, spaces or knowledg
 
 ## Connecting Points
 
-- Local socialist organizations
+- Local socialist organisations
 - Socialist education events
 - People's assemblies - coordination spaces
 - Community union branches
-- Unemployed and precarious workers' organizations
+- Unemployed and precarious workers' organisations
 
 </div>

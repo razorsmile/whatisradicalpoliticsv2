@@ -38,7 +38,7 @@ This method emerged from Italian Marxism in the 1960s. Romano Alquati worked wit
 Three key principles:
 
 - **From the inside:** Workers are experts on their own conditions
-- **Partisan knowledge:** Research serves organizing, not neutrality
+- **Partisan knowledge:** Research serves organising, not neutrality
 - **Co-research:** Breaking down researcher/researched divide
 
 Tonight we'll map the counter-power that already exists in our area - the spaces, networks, and practices where working-class people exercise collective capacity outside capitalist and state control."
@@ -54,7 +54,7 @@ Tonight we'll map the counter-power that already exists in our area - the spaces
 
 **Facilitator Script:**
 
-"We'll organize our inquiry around four overlapping categories. These aren't rigid boxes - most projects span multiple categories."
+"We'll organise our inquiry around four overlapping categories. These aren't rigid boxes - most projects span multiple categories."
 
 </div>
 
@@ -82,7 +82,7 @@ Reciprocal support systems meeting immediate needs outside market and state.
 
 <div class="tradition-card">
 
-### Self-Organized Spaces
+### Self-Organised Spaces
 
 Physical and social spaces controlled by communities, not capital or state.
 
@@ -94,7 +94,7 @@ Physical and social spaces controlled by communities, not capital or state.
 - Independent music venues
 - Hackspaces and maker spaces
 
-**Power:** Creates autonomous infrastructure for organizing
+**Power:** Creates autonomous infrastructure for organising
 
 **Limits:** Vulnerable to gentrification and commodification
 
@@ -144,7 +144,7 @@ Collective production and sharing of knowledge outside academic and corporate co
 
 ### We Are The Multitude - a new way to understand our class
  
-Philosopher Antonio Negri uses "the multitude" to describe not a unified working class but a plural, diverse formation of all who labor under capital. Counter-power exists wherever the multitude self-organizes: in workplaces, homes, streets, and digital spaces. These four categories are examples of how the multitude builds capacity for collective self-determination.
+Philosopher Antonio Negri uses "the multitude" to describe not a unified working class but a plural, diverse formation of all who labor under capital. Counter-power exists wherever the multitude self-organises: in workplaces, homes, streets, and digital spaces. These four categories are examples of how the multitude builds capacity for collective self-determination.
 
 </div>
 
@@ -171,7 +171,7 @@ Philosopher Antonio Negri uses "the multitude" to describe not a unified working
 We'll use colored pins:
 
 - **Red:** Mutual aid networks
-- **Blue:** Self-organized spaces
+- **Blue:** Self-organised spaces
 - **Green:** Alternative economies
 - **Yellow:** Knowledge commons
 
@@ -211,7 +211,7 @@ Jot down notes on your worksheet first, then we'll map together."
 - **The multitude:** Diverse formation of all who labor under capitalism
 - **Commons:** Resources governed collectively, neither private nor state property
 - **Circulation of struggles:** How movements in different places/sectors influence each other
-- **Composition:** The technical, social, and political organization of the working class
+- **Composition:** The technical, social, and political organisation of the working class
 
 </div>
 
@@ -306,7 +306,7 @@ Jot down notes on your worksheet first, then we'll map together."
 
 "Thank you all for your knowledge, your curiosity, and your commitment. This map represents real counter-power. As the IWW says: 'We are building the new world in the shell of the old.' That building happens in spaces and projects like these - and through connections between them.
 
-I'll photograph this map and share it digitally. Use it. Add to it. Organize from it. This is our collective resource.
+I'll photograph this map and share it digitally. Use it. Add to it. Organise from it. This is our collective resource.
 
 And remember: you are now part of our area's radical history. What happens next is up to us."
 

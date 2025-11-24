@@ -11,7 +11,7 @@ weight: 4
 
 ## Overview
 
-Our final session introduces the Italian workerist tradition of 'inchiesta operaia' (workers' inquiry) and conricerca (co-research). We collectively map mutual aid networks, self-organized projects, and community infrastructure in our locality, creating a physical resource. This session adapts examples from Brighton - replace with our own local sites of counter-power.
+Our final session introduces the Italian workerist tradition of 'inchiesta operaia' (workers' inquiry) and conricerca (co-research). We collectively map mutual aid networks, self-organised projects, and community infrastructure in our locality, creating a physical resource. This session adapts examples from Brighton - replace with our own local sites of counter-power.
 
 There is a short history of the workers inquiry and its contemporary relevance in Handout 11 if you want to explore it some more.
 
@@ -26,14 +26,14 @@ In 1960s Italy, radical sociologists developed new methods for understanding wor
 ### Workers' Inquiry Asks:
 
 - How do workers resist exploitation daily?
-- What informal organization exists?
+- What informal organisation exists?
 - Where is potential power located?
 - How does struggle circulate and spread?
 
 ### Co-Research (Conricerca) Means:
 
 - Research WITH not ON people
-- Combining investigation and organization
+- Combining investigation and organisation
 - Knowledge production as political intervention
 - Breaking down researcher/subject divide
 
@@ -71,7 +71,7 @@ Direct, horizontal support systems that meet immediate needs while building soli
 - Community fridges and food banks
 - Informal childcare networks and parent cooperatives
 - Mental health peer support groups
-- Migrant solidarity organizations
+- Migrant solidarity organisations
 
 **What Makes This Counter-Power?**
 
@@ -81,11 +81,11 @@ These networks demonstrate we can meet our needs without the state or market, bu
 
 <div class="tradition-card">
 
-### 2. Self-Organized Spaces
+### 2. Self-Organised Spaces
 
 Physical infrastructure controlled by communities - because space is power.
 
-**Types of self-organized spaces:**
+**Types of self-organised spaces:**
 - Radical social centers
 - Community-owned pubs and cafes
 - Black and minority ethnic community spaces
@@ -94,7 +94,7 @@ Physical infrastructure controlled by communities - because space is power.
 
 **What Makes This Counter-Power?**
 
-Control over space means ability to organize, meet, plan, and build community outside surveillance and market relations.
+Control over space means ability to organise, meet, plan, and build community outside surveillance and market relations.
 
 </div>
 
@@ -102,7 +102,7 @@ Control over space means ability to organize, meet, plan, and build community ou
 
 ### 3. Alternative Economies
 
-Non-capitalist forms of exchange demonstrating other ways of organizing production and distribution.
+Non-capitalist forms of exchange demonstrating other ways of organising production and distribution.
 
 **Forms of alternative economy:**
 - Local exchange trading systems (LETS)
@@ -113,7 +113,7 @@ Non-capitalist forms of exchange demonstrating other ways of organizing producti
 
 **What Makes This Counter-Power?**
 
-These demonstrate production and exchange can be organized by principles of cooperation not competition, need not profit.
+These demonstrate production and exchange can be organised by principles of cooperation not competition, need not profit.
 
 </div>
 
@@ -140,7 +140,7 @@ Breaking the monopoly on knowledge production and distribution, creating our own
 
 ### We Are The Multitude - a new way to understand our class
  
-Philosopher Antonio Negri uses "the multitude" to describe not a unified working class but a plural, diverse formation of all who labor under capital. Counter-power exists wherever the multitude self-organizes: in workplaces, homes, streets, and digital spaces. These four categories are examples of how the multitude builds capacity for collective self-determination.
+Philosopher Antonio Negri uses "the multitude" to describe not a unified working class but a plural, diverse formation of all who labor under capital. Counter-power exists wherever the multitude self-organises: in workplaces, homes, streets, and digital spaces. These four categories are examples of how the multitude builds capacity for collective self-determination.
 
 </div>
 
@@ -165,12 +165,12 @@ Think of ONE site of counter-power you know about. Answer:
 
 This could be:
 
-- Your workplace (informal organization, not official unions)
+- Your workplace (informal organisation, not official unions)
 - Your neighborhood (WhatsApp groups, support networks)
 - Communities you're part of (identity-based, interest-based)
 - Projects you know about
 
-**We're looking for ACTUAL organization, not theoretical potential.**
+**We're looking for ACTUAL organisation, not theoretical potential.**
 
 <div class="example-box">
 
@@ -179,7 +179,7 @@ This could be:
 In the actual session, participants add their sites to a physical map with colored pins or sticky notes representing each category.  The map can be made from a photocopy, or drawn as a rough digram on a large sheet of paper - be creative.  This is a way for comrades to get familiar with their local space and what already exists:
 
 - **Blue:** Mutual Aid Networks
-- **Green:** Self-Organized Spaces
+- **Green:** Self-Organised Spaces
 - **Yellow:** Alternative Economies
 - **Red:** Knowledge Commons
 
@@ -203,7 +203,7 @@ This visual representation reveals the existing infrastructure of counter-power 
 
 - Could these sites be connected into stronger networks?
 - What would coordination without centralization look like?
-- How does this relate to electoral organizing?
+- How does this relate to electoral organising?
 - Can we scale these models without losing their radical character?
 
 </div>
@@ -256,7 +256,7 @@ Over four weeks, we've developed analytical tools:
 - **Historical:** Learning from local radical history
 - **Sociological:** Mapping actually existing counter-power
 
-These aren't abstract ideas but practical tools. The question isn't whether radical change is possible - our history and present mapping show it is. The question is how we organize to make it happen.
+These aren't abstract ideas but practical tools. The question isn't whether radical change is possible - our history and present mapping show it is. The question is how we organise to make it happen.
 
 **"We are building the new world in the shell of the old."**  
 *- Industrial Workers of the World*

@@ -15,7 +15,7 @@ weight: 7
 
 **Category:**
 - ☐ Mutual Aid Network
-- ☐ Self-Organized Space
+- ☐ Self-Organised Space
 - ☐ Alternative Economy
 - ☐ Knowledge Commons
 

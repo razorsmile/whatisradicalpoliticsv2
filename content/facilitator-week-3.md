@@ -185,7 +185,7 @@ Your research matters. Official history won't preserve these stories - we must."
 
 - Sites of historical struggles
 - Current radical spaces
-- Where you live/work/organize
+- Where you live/work/organise
 - Connections between past and present
 
 Come up and add your knowledge. This is our radical historiography."
@@ -201,7 +201,7 @@ Come up and add your knowledge. This is our radical historiography."
 **Discussion Prompts:**
 
 1. "Which historical tactics could work today? Which couldn't and why?"
-2. "What's different about organizing in 2024 versus 1934 or 1974?"
+2. "What's different about organising in 2024 versus 1934 or 1974?"
 3. "How do we ensure today's struggles become tomorrow's inspiring history?"
 4. "What stories of resistance from your own family or community should be preserved?"
 
@@ -211,6 +211,6 @@ Come up and add your knowledge. This is our radical historiography."
 
 "Next week, our final session, we'll map working-class counter-power in our area today. We'll use methods from Italian Marxist sociology - workers' inquiry and co-research - to identify where collective power exists now.
 
-Optional task: Identify one mutual aid project, self-organized space, or community infrastructure in our locality. We'll build a resource map together."
+Optional task: Identify one mutual aid project, self-organised space, or community infrastructure in our locality. We'll build a resource map together."
 
 </div>

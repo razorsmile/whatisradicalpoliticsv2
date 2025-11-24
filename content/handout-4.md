@@ -29,7 +29,7 @@ Three strategic orientations to confronting and transforming state power:
 
 **AGAINST THE STATE:** Confronting state power through resistance, disruption, and refusal. The state is fundamentally an instrument of domination that cannot be reformed.
 
-**BEYOND THE STATE:** Building parallel institutions and counter-power outside state control. We must create new forms of social organization rather than seizing existing ones.
+**BEYOND THE STATE:** Building parallel institutions and counter-power outside state control. We must create new forms of social organisation rather than seizing existing ones.
 
 </div>
 

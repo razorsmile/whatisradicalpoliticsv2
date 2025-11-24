@@ -66,7 +66,7 @@ Confronting state power through resistance, disruption, and refusal.
 
 Building parallel institutions and counter-power outside state control.
 
-- **Logic:** We must create new forms of social organization rather than seizing existing ones
+- **Logic:** We must create new forms of social organisation rather than seizing existing ones
 - **Methods:** Cooperatives, mutual aid networks, community land trusts, alternative currencies
 - **Local examples:** Local food cooperatives, community gardens, time banks
 - **Risks:** Isolation, lack of resources, limited scale
@@ -120,7 +120,7 @@ This takes over empty buildings directly to house rough sleepers despite legal t
 
 These create non-commodified housing outside market and state systems.
 
-Most effective movements combine strategies. The 1915 Glasgow Rent Strikes used 'against' tactics (strikes) to win 'in' victories (rent controls) while building 'beyond' structures (tenants' organizations)."
+Most effective movements combine strategies. The 1915 Glasgow Rent Strikes used 'against' tactics (strikes) to win 'in' victories (rent controls) while building 'beyond' structures (tenants' organisations)."
 
 </div>
 
@@ -158,9 +158,9 @@ Our local council has limited powers. Can municipal socialism work within nation
 **Key Terms for Session 2:**
 
 - **The state:** Government institutions plus military, police, courts, bureaucracy
-- **Civil society:** Organizations and relationships outside state and market
+- **Civil society:** Organisations and relationships outside state and market
 - **Dual power:** Alternative institutions competing with state authority
-- **Prefigurative politics:** Organizing in ways that embody desired future
+- **Prefigurative politics:** Organising in ways that embody desired future
 - **Recuperation:** System's ability to absorb and neutralize radical challenges
 - **Autonomy:** Self-governance independent of state control
 

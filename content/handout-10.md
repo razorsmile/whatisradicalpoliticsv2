@@ -16,12 +16,12 @@ weight: 10
 - Rotate facilitation
 - Connect theory to local practice
 
-### Join Local Organizations
+### Join Local Organisations
 
-- Local socialist organizations
+- Local socialist organisations
 - Tenants' unions
 - Trade union branches
-- Community organizing groups
+- Community organising groups
 
 ### Develop Your Practice
 

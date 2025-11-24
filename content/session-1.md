@@ -27,7 +27,7 @@ Etymologically, 'radical' comes from the Latin 'radix' - meaning root. Radical p
 
 **Non-radical approach:** Build more shelters, provide more services
 
-**Radical approach:** Why does homelessness exist? What systems create it? How might we reorganize society to eliminate it entirely?
+**Radical approach:** Why does homelessness exist? What systems create it? How might we reorganise society to eliminate it entirely?
 
 </div>
 
@@ -66,7 +66,7 @@ This 'going to the root' can mean:
 
 **Root Problem:** Hierarchy and coercive authority
 
-**Solution:** Horizontal organization, mutual aid
+**Solution:** Horizontal organisation, mutual aid
 
 **Local Example:** Radical social spaces, Foodbanks, squatting movements, anti-raids organsation
 
@@ -174,7 +174,7 @@ Can we have sustainable socialism or does industrialism itself need dismantling?
 
 ### For Next Week
 
-Research ONE current local organization/project that embodies radical politics for you. Bring a 2-minute sharing. This could be:
+Research ONE current local organisation/project that embodies radical politics for you. Bring a 2-minute sharing. This could be:
 
 - A historical event or movement
 - A current group or space

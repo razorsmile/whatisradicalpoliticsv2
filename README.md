@@ -1,6 +1,6 @@
 # What is Radical Politics? - Critical Political Education Course (V2)
 
-A four-week course exploring radical political traditions, state power, local history, and counter-power organizing. Designed for participatory, experience-based learning grounded in local contexts.
+A four-week course exploring radical political traditions, state power, local history, and counter-power organising. Designed for participatory, experience-based learning grounded in local contexts.
 
 ## 📚 About This Course
 
@@ -8,7 +8,7 @@ This course provides an accessible introduction to radical political thinking an
 
 - Connect theoretical concepts to lived experience
 - Ground abstract ideas in local contexts
-- Build practical organizing skills
+- Build practical organising skills
 - Create space for collective learning and dialogue
 
 ### Course Structure
@@ -23,7 +23,7 @@ Examine different strategic orientations to state power
 Research and recover hidden histories of resistance in your area
 
 **Week 4: Mapping Counter-Power**  
-Survey existing organizing in your locality and identify opportunities
+Survey existing organising in your locality and identify opportunities
 
 ## 🎯 Project Goals
 
@@ -210,7 +210,7 @@ git remote add origin https://github.com/YOUR-USERNAME/YOUR-FORK.git
   - Edit `content/facilitator-week-3.md`
   - Edit `content/handout-7.md`
 
-- **Week 4 Local Organizations**: Map organizing in your area
+- **Week 4 Local Organisations**: Map organising in your area
   - Edit `content/session-4.md`
   - Edit `content/facilitator-week-4.md`
 
@@ -243,7 +243,7 @@ After changing the baseURL, run `npm run deploy` and copy `public/` contents to 
 
 Update footer in `layouts/partials/footer.html`:
 ```html
-<p>Copyright © 2025 Your Organization</p>
+<p>Copyright © 2025 Your Organisation</p>
 <p>Licensed under the <a href="https://www.gnu.org/licenses/fdl-1.3.html">GNU Free Documentation License v1.3</a></p>
 ```
 
@@ -314,7 +314,7 @@ Print-specific CSS is in `assets/css/style.css` under `@media print`.
 | `content/_index.md` | Homepage content |
 | `static/robots.txt` | Crawler blocking |
 
-### Content Organization
+### Content Organisation
 
 - **Sessions** (`session-[1-4].md`): Participant-facing course content
 - **Facilitator Scripts** (`facilitator-week-[1-4].md`): Detailed facilitation notes
@@ -406,7 +406,7 @@ Contributions welcome! To contribute:
 
 This course builds on years of radical political education work and countless conversations with comrades. Special thanks to all who have facilitated, participated in, and contributed to developing these materials.
 
-The course draws on traditions of popular education, workers' inquiry, and participatory action research. It stands on the shoulders of generations of organizers and educators committed to democratic, accessible political education.
+The course draws on traditions of popular education, workers' inquiry, and participatory action research. It stands on the shoulders of generations of organisers and educators committed to democratic, accessible political education.
 
 ## 📚 Further Reading
 

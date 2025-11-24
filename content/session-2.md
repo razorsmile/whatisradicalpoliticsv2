@@ -103,7 +103,7 @@ Confronting state power through resistance, disruption, and refusal.
 
 Building parallel institutions and counter-power outside state control.
 
-**Logic:** We must create new forms of social organization rather than seizing existing ones
+**Logic:** We must create new forms of social organisation rather than seizing existing ones
 
 **Methods:**
 - Cooperatives and mutual aid networks
@@ -192,7 +192,7 @@ Most effective movements combine strategies. The Glasgow Rent Strikes used:
 
 - **AGAINST:** Strike tactics and direct confrontation
 - **IN:** Won rent control legislation
-- **BEYOND:** Built lasting tenants' organizations
+- **BEYOND:** Built lasting tenants' organisations
 
 </div>
 

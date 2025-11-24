@@ -588,7 +588,7 @@ Reed has four principles for what he calls 'social education' that are useful st
 3. Link the learner's practice to the historical development of society
 4. Draw on lessons and experiences of other progressive groups to improve learners' practice
 
-Reed's work has a broader audience than is intended with the radical // education (hence why Reed calls his method 'social education') but this project fits within this framework to a large extent, with the added intention that the radical // education courses are *explicitly* aimed at both a working class audience *and* the radical community itself. 
+Reed's work has a broader audience than is intended with this radical education course (hence why Reed calls his method 'social education').  This course is aimed more *explicitly* at both a working class audience *and* the radical community itself than in the case of Reed's work. 
 ---
 
 **Built with Hugo • Licensed under GNU FDL 1.3 • Free to adapt and share**

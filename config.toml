@@ -1,11 +1,18 @@
+# Base URL - override at build time for subdirectory deployments
+# Examples:
+#   hugo --baseURL /                    (root deployment or offline)
+#   hugo --baseURL /wirpv2/             (subdirectory deployment)
+#   hugo --baseURL /courses/politics/   (any subdirectory)
 baseURL = "/"
+
 languageCode = "en-us"
-title = "radical // education"
+title = "Radical // Education"
 
 # Disable taxonomies, sitemap, and RSS generation
 disableKinds = ["taxonomy", "term", "sitemap", "RSS"]
 
-# Enable relative URLs for offline/portable use
+# Enable relative URLs for maximum portability
+# This allows the site to work in any subdirectory or offline
 relativeURLs = true
 canonifyURLs = false
 

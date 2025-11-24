@@ -1,6 +1,29 @@
 <header>
   <div class="header-content">
     <h1 class="site-title"><a href="/">{{ .Site.Title }}</a></h1>
+
+    <!-- Mobile Hamburger Menu -->
+    <div id="mobile-menu" class="mobile-menu">
+      <div id="menu-bar" class="menu-bar" onclick="menuOnClick()">
+        <div id="bar1" class="bar"></div>
+        <div id="bar2" class="bar"></div>
+        <div id="bar3" class="bar"></div>
+      </div>
+    </div>
+
+    <!-- Desktop Nav -->
     {{ partial "nav.html" . }}
+
+    <!-- Mobile Nav -->
+    <nav class="mobile-nav" id="mobile-nav" role="navigation" aria-label="Mobile navigation">
+      <ul class="mobile-nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/sessions/">Sessions</a></li>
+        <li><a href="/materials/">Course Materials</a></li>
+      </ul>
+    </nav>
   </div>
+
+  <!-- Mobile Menu Background -->
+  <div class="menu-bg" id="menu-bg"></div>
 </header>

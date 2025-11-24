@@ -1,3 +1,27 @@
+// Mobile hamburger menu toggle
+function menuOnClick() {
+  document.getElementById("menu-bar").classList.toggle("change");
+  document.getElementById("mobile-nav").classList.toggle("change");
+  document.getElementById("menu-bg").classList.toggle("change-bg");
+}
+
+// Homepage header slide-in on scroll
+document.addEventListener('DOMContentLoaded', function() {
+  // Only run on homepage
+  if (document.body.classList.contains('homepage')) {
+    const header = document.querySelector('header');
+    let hasScrolled = false;
+
+    window.addEventListener('scroll', function() {
+      // Show header after scrolling 100px
+      if (window.scrollY > 100 && !hasScrolled) {
+        header.classList.add('visible');
+        hasScrolled = true;
+      }
+    });
+  }
+});
+
 // Keyboard navigation for dropdown menus
 document.addEventListener('DOMContentLoaded', function() {
   const dropdowns = document.querySelectorAll('.dropdown > a.dropdown-toggle');

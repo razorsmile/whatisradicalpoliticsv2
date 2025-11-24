@@ -1,9 +1,34 @@
 {{ define "main" }}
-<section class="session-hero">
+<section class="handout-hero">
   <div class="session-hero-content">
     <h1>{{ .Title }}</h1>
     {{ if .Params.description }}
     <p class="session-description">{{ .Params.description }}</p>
+    {{ end }}
+
+    {{ if .Params.weight }}
+    {{ $currentWeight := .Params.weight }}
+    <nav class="session-nav" aria-label="Navigate between handouts">
+      {{ if gt $currentWeight 1 }}
+      {{ $prevWeight := sub $currentWeight 1 }}
+      {{ $prevHandout := printf "/handout-%d/" $prevWeight }}
+      <a href="{{ $prevHandout }}" class="session-nav-link prev">
+        <span class="nav-arrow">&laquo;</span> Previous Handout
+      </a>
+      {{ end }}
+
+      {{ if and (gt $currentWeight 1) (lt $currentWeight 11) }}
+      <span class="session-nav-divider">|</span>
+      {{ end }}
+
+      {{ if lt $currentWeight 11 }}
+      {{ $nextWeight := add $currentWeight 1 }}
+      {{ $nextHandout := printf "/handout-%d/" $nextWeight }}
+      <a href="{{ $nextHandout }}" class="session-nav-link next">
+        Next Handout <span class="nav-arrow">&raquo;</span>
+      </a>
+      {{ end }}
+    </nav>
     {{ end }}
   </div>
 </section>

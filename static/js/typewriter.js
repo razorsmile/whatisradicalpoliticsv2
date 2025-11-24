@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
   if (heroElement && typeof Typewriter !== 'undefined') {
     // Get the title from the data attribute
-    const title = heroElement.getAttribute('data-text') || 'What is radical politics?';
+    const title = heroElement.getAttribute('data-text') || 'What is Radical Politics?';
     
     const typewriter = new Typewriter(heroElement, {
       loop: false,

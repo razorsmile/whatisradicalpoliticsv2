@@ -37,12 +37,14 @@ document.addEventListener('DOMContentLoaded', function() {
     
     ctx.closePath();
     
-    // Soft colors with low opacity
+    // Autumn earth tones with low opacity
     const colors = [
-      `rgba(43, 2, 116, ${opacity})`,
-      `rgba(26, 58, 82, ${opacity})`,
-      `rgba(100, 50, 160, ${opacity})`,
-      `rgba(60, 20, 130, ${opacity})`
+      `rgba(210, 105, 30, ${opacity})`,   // Burnt orange
+      `rgba(139, 69, 19, ${opacity})`,    // Burgundy/saddle brown
+      `rgba(204, 139, 60, ${opacity})`,   // Ochre
+      `rgba(160, 82, 45, ${opacity})`,    // Sienna
+      `rgba(107, 142, 35, ${opacity})`,   // Olive green
+      `rgba(101, 67, 33, ${opacity})`     // Dark brown
     ];
     
     ctx.fillStyle = colors[Math.floor(Math.random() * colors.length)];

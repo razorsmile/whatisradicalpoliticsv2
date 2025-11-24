@@ -10,22 +10,17 @@
   <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
   <meta name="bingbot" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
   
-  {{ $styles := resources.Get "css/style.css" | minify }}
-  <link rel="stylesheet" href="{{ $styles.RelPermalink }}">
-  
-  {{ $typewriter := resources.Get "js/vendor/typewriter-effect.js" | minify }}
-  <script src="{{ $typewriter.RelPermalink }}"></script>
-  
-  {{ $backgroundPattern := resources.Get "js/background-pattern.js" | minify }}
-  <script src="{{ $backgroundPattern.RelPermalink }}" defer></script>
-  
-  {{ $typewriterInit := resources.Get "js/typewriter.js" | minify }}
-  <script src="{{ $typewriterInit.RelPermalink }}" defer></script>
-  
-  {{ $mainJs := resources.Get "js/main.js" | minify }}
-  <script src="{{ $mainJs.RelPermalink }}" defer></script>
+  <link rel="stylesheet" href="/css/style.css">
+
+  <script src="/js/vendor/typewriter-effect.js"></script>
+
+  <script src="/js/background-pattern.js" defer></script>
+
+  <script src="/js/typewriter.js" defer></script>
+
+  <script src="/js/main.js" defer></script>
 </head>
-<body>
+<body{{ if .IsHome }} class="homepage"{{ end }}>
   <a href="#main-content" class="skip-link">Skip to main content</a>
   {{ partial "header.html" . }}
   <main id="main-content">

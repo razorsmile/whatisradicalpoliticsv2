@@ -1,5 +1,5 @@
 {{ define "main" }}
-<section class="session-hero">
+<section class="session-hero" data-week="{{ .Params.weight }}">
   <div class="session-hero-content">
     {{ if .Params.week_badge }}
     {{ $weekNum := .Params.weight }}
@@ -14,6 +14,31 @@
     {{ end }}
     {{ if .Params.description }}
     <p class="session-description">{{ .Params.description }}</p>
+    {{ end }}
+
+    {{ if .Params.weight }}
+    {{ $currentWeight := .Params.weight }}
+    <nav class="session-nav" aria-label="Navigate between sessions">
+      {{ if gt $currentWeight 1 }}
+      {{ $prevWeight := sub $currentWeight 1 }}
+      {{ $prevSession := printf "/session-%d/" $prevWeight }}
+      <a href="{{ $prevSession }}" class="session-nav-link prev">
+        <span class="nav-arrow">&laquo;</span> Previous Session
+      </a>
+      {{ end }}
+
+      {{ if and (gt $currentWeight 1) (lt $currentWeight 4) }}
+      <span class="session-nav-divider">|</span>
+      {{ end }}
+
+      {{ if lt $currentWeight 4 }}
+      {{ $nextWeight := add $currentWeight 1 }}
+      {{ $nextSession := printf "/session-%d/" $nextWeight }}
+      <a href="{{ $nextSession }}" class="session-nav-link next">
+        Next Session <span class="nav-arrow">&raquo;</span>
+      </a>
+      {{ end }}
+    </nav>
     {{ end }}
   </div>
 </section>

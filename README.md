@@ -37,17 +37,19 @@ Survey existing organising in your locality and identify opportunities
 
 ### Built With
 
-- **Hugo** (v0.152.2) - Static site generator (This is a learning project for me, getting to grips with using Hugo)
+- **Hugo** (v0.152.2) - Static site generator (This is a learning project for me, getting to grips with using Hugo).  
 - **Custom CSS** - No frameworks, optimized for print and screen
 - **Vanilla JavaScript** - Minimal dependencies for offline reliability
 - **Self-hosted assets** - No external CDN dependencies
+- **Blink Font Family** - Hero text site title use the Blink typeface by Mew Too/Cannot Into Space Fonts, licensed under SIL Open Font License 1.1
 
 ```
 
 ### Key Features
 
-✅ **Hugo Pipes Asset Processing**: CSS and JS minified and optimized
+✅ **Static File Architecture**: Simple, portable deployment without build-time asset processing
 ✅ **Self-hosted Assets**: No external CDN dependencies
+✅ **Portable Deployment**: Works in any subdirectory or as offline/downloadable site
 ✅ **WCAG 2.1 AA Compliant**: Full keyboard navigation, ARIA labels, screen reader support
 ✅ **Print-Optimized**: Special layouts for printing handouts and facilitator scripts
 ✅ **Responsive Design**: Works on desktop, tablet, and mobile
@@ -59,7 +61,8 @@ Survey existing organising in your locality and identify opportunities
 ### Prerequisites
 
 - **Hugo Extended** v0.152.2 or later
-- **Node.js** and npm (optional, for build scripts)
+
+(You can check if you have Hugo installed with 'hugo --version' in your terminal.  If you don't have it go here for install instructions - https://gohugo.io/installation/)
 
 ### Installation
 
@@ -68,37 +71,125 @@ Survey existing organising in your locality and identify opportunities
 git clone https://github.com/razorsmile/whatisradicalpoliticsV2.git
 cd whatisradicalpoliticsV2
 
-# Install dependencies
-npm install
-
 # Start the development server
-npm run dev
+hugo server
+
+# For remote access (SSH port forwarding):
+hugo server --bind 0.0.0.0
 
 # Visit http://localhost:1313/
 ```
 
 ### Build & Deploy
 
-This project is configured to deploy to **https://systemdecomposition.org/wirpv2/**
+This site uses a **portable architecture** that works in any deployment scenario.
+
+#### Deploy to Root Directory
 
 ```bash
-# Build for production
-npm run build
+# Build for root deployment (example.com/)
+hugo --baseURL /
 
-# Or build and clean in one step
-npm run deploy
-
-# Output will be in the /public directory
-# Copy contents to /var/www/yoursite.com/wirpv2/
+# Copy contents to web root
+cp -r public/* /var/www/yoursite.com/
 ```
 
-**To change the deployment subdirectory:**
-Edit `config/_default/config.toml` and change the `baseURL` on line 1:
-```toml
-baseURL = "/your-subdirectory/"
+#### Deploy to Subdirectory
+
+```bash
+# Build for subdirectory deployment (example.com/wirpv2/)
+hugo --baseURL /wirpv2/
+
+# Copy contents to subdirectory
+cp -r public/* /var/www/yoursite.com/wirpv2/
 ```
+
+#### Deploy to Any Subdirectory
+
+```bash
+# Build for any subdirectory path
+hugo --baseURL /your/custom/path/
+
+# Copy contents to target subdirectory
+cp -r public/* /var/www/yoursite.com/your/custom/path/
+```
+
+#### Create Downloadable/Offline Version
+
+```bash
+# Build for offline use (works when opened directly from filesystem)
+hugo --baseURL /
+
+# Create downloadable ZIP
+cd public
+zip -r ../radical-politics-course.zip .
+cd ..
+
+# Distribute the ZIP file - users can extract and open index.html
+```
+
+**Configuration:**
+- The site uses `relativeURLs = true` for maximum portability
+- Override `baseURL` at build time for different deployment targets
+- No need to edit config files - just change the build command!
 
 ## 📝 Content Workflow
+
+### Content Location Guide
+
+**Understanding Hugo Content Architecture:**
+Hugo uses two places for content:
+1. **Markdown files** (in `content/`) contain the main body text
+2. **Layout templates** (in `layouts/`) contain page structure and additional text
+
+#### Homepage (`http://localhost:1313/`)
+- **Structure & most text**: `layouts/index.html`
+- **Metadata only**: `content/_index.md` (minimal frontmatter)
+
+**Editable sections in `layouts/index.html`:**
+- Lines 14-52: About cards (Why This Course, Course Philosophy, Using The Course Materials, Using the Course)
+- Lines 62-88: Four Week Journey cards (titles, descriptions)
+- Lines 108-114: Course Creator section
+
+#### Sessions Overview Page (`http://localhost:1313/sessions/`)
+- **All content**: `layouts/_default/sessions.html`
+- Lines 11-45: Session cards with titles and descriptions
+
+#### Course Materials Page (`http://localhost:1313/materials/`)
+- **All content**: `layouts/_default/materials.html`
+- **Metadata only**: `content/materials.md`
+
+**Editable sections in `layouts/_default/materials.html`:**
+- Lines 15-18: Overview section
+- Lines 21-44: Session Scripts buttons and text
+- Lines 47-157: Course Philosophy, Getting Started, Facilitation Tips, Session Structure, Additional Resources
+
+#### Individual Session Pages (`/session-1/`, `/session-2/`, etc.)
+- **Main body content**: `content/session-[1-4].md` (markdown files)
+- **Page structure**: `layouts/_default/single.html`
+- **Navigation**: Auto-generated based on `weight` parameter
+
+**To edit session content:**
+1. Edit the markdown file: `content/session-1.md` (or 2, 3, 4)
+2. The `{{ .Content }}` in `layouts/_default/single.html` (line 48) renders the markdown
+
+#### Facilitator Scripts (`/facilitator-week-1/`, etc.)
+- **Main body content**: `content/facilitator-week-[1-4].md`
+- **Page structure**: `layouts/facilitator/single.html`
+- **Navigation**: Auto-generated based on `weight` parameter
+
+#### Handouts (`/handout-1/`, `/handout-2/`, etc.)
+- **Main body content**: `content/handout-[1-11].md`
+- **Page structure**: `layouts/handout/single.html`
+- **Navigation**: Auto-generated based on `weight` parameter
+
+#### Navigation Menu
+- **Desktop nav**: `layouts/partials/nav.html`
+- **Mobile nav**: `layouts/partials/header.html` (lines 18-24)
+
+#### Footer
+- **Footer content**: `layouts/partials/footer.html`
+- Includes copyright, license, GitHub link
 
 ### Creating New Content
 
@@ -117,9 +208,15 @@ hugo new content/facilitator-week-5.md
 
 ### Editing Existing Content
 
+**For markdown body content** (sessions, facilitators, handouts):
 1. Edit markdown files in the `content/` directory
 2. If the dev server is running it auto-reloads with changes
 3. All content uses frontmatter for metadata
+
+**For page structure and additional text** (homepage, materials, sessions overview):
+1. Edit layout files in the `layouts/` directory
+2. Dev server auto-reloads with changes
+3. These files use Hugo template syntax (Go templates)
 
 **Example frontmatter:**
 ```yaml
@@ -136,9 +233,35 @@ weight: 1
 ### Content Types
 
 - **Sessions** (`type: "session"`): Main course content for participants
+  - Body: `content/session-[1-4].md`
+  - Layout: `layouts/_default/single.html`
+
 - **Facilitator Scripts** (`type: "facilitator"`): Detailed facilitation guidance
+  - Body: `content/facilitator-week-[1-4].md`
+  - Layout: `layouts/facilitator/single.html`
+
 - **Handouts** (`type: "handout"`): Printable supplementary materials
-- **Pages** (default): Static pages like the facilitator guide
+  - Body: `content/handout-[1-11].md`
+  - Layout: `layouts/handout/single.html`
+
+- **Pages** (default): Static pages like homepage and materials
+  - Body: Usually in layout files (not markdown)
+  - Layout: `layouts/_default/*.html` or `layouts/index.html`
+
+### Quick Reference: Where to Edit What
+
+| What You Want to Change | File to Edit | Lines |
+|------------------------|--------------|-------|
+| Homepage "Why This Course" | `layouts/index.html` | 16-18 |
+| Homepage "Course Philosophy" | `layouts/index.html` | 23-28 |
+| Homepage "Four Week Journey" cards | `layouts/index.html` | 62-88 |
+| Materials page facilitator guide | `layouts/_default/materials.html` | 15-157 |
+| Sessions overview page | `layouts/_default/sessions.html` | 11-45 |
+| Session 1 main content | `content/session-1.md` | (markdown body) |
+| Facilitator Week 1 script | `content/facilitator-week-1.md` | (markdown body) |
+| Handout 1 content | `content/handout-1.md` | (markdown body) |
+| Navigation menu | `layouts/partials/nav.html` | (entire file) |
+| Footer text | `layouts/partials/footer.html` | (entire file) |
 
 ## 🔄 Update Workflow
 
@@ -146,18 +269,18 @@ weight: 1
 
 ```bash
 # 1. Start dev server to preview changes
-npm run dev
+hugo server
 
 # 2. Edit content files in /content directory
 # 3. Changes auto-reload in browser
 
-# 4. When satisfied, choose your build target:
+# 4. When satisfied, build for your target:
 
-# For downloadable package:
-npm run package
+# For specific subdirectory (e.g., /wirpv2/):
+hugo --baseURL /wirpv2/
 
-# For web deployment:
-npm run deploy
+# For root or offline use:
+hugo --baseURL /
 
 # 5. Commit changes
 git add .
@@ -171,17 +294,18 @@ The `public/` directory contains the complete static site after building.
 
 **Deployment Steps:**
 ```bash
-# Build the site
-npm run deploy
+# Build the site for your deployment path
+hugo --baseURL /wirpv2/
 
 # Upload public/* to your web server
 # Example: Copy to /var/www/yoursite.com/wirpv2/
+cp -r public/* /var/www/yoursite.com/wirpv2/
 ```
 
 **Deployment Options:**
-- **Manual**: Run `npm run deploy`, upload `public/` contents to your web host
-- **GitHub Pages**: Push `public/` to gh-pages branch
-- **Netlify**: Configure build command as `npm run build` in Netlify settings
+- **Manual**: Build with Hugo, upload `public/` contents to your web host
+- **GitHub Pages**: Build and push `public/` to gh-pages branch
+- **Netlify**: Configure build command as `hugo --baseURL /` in Netlify settings
 
 ## 🍴 Forking for Local Adaptation
 
@@ -239,7 +363,7 @@ baseURL = "/your-subdirectory/"
 # baseURL = "/courses/radical/"        → yoursite.com/courses/radical/
 ```
 
-After changing the baseURL, run `npm run deploy` and copy `public/` contents to the matching subdirectory on your server.
+After changing the baseURL, run `hugo --baseURL /your-subdirectory/` and copy `public/` contents to the matching subdirectory on your server.
 
 Update footer in `layouts/partials/footer.html`:
 ```html
@@ -254,8 +378,11 @@ Update footer in `layouts/partials/footer.html`:
 ### 5. Build Your Version
 
 ```bash
-# Build and deploy
-npm run deploy
+# Build for your deployment path
+hugo --baseURL /your-subdirectory/
+
+# Or for root/offline:
+hugo --baseURL /
 ```
 
 ### 6. Share Your Adaptation
@@ -320,24 +447,35 @@ Print-specific CSS is in `assets/css/style.css` under `@media print`.
 - **Facilitator Scripts** (`facilitator-week-[1-4].md`): Detailed facilitation notes
 - **Handouts** (`handout-[1-11].md`): Supplementary materials
 
-## 🔧 NPM Scripts
+## 🔧 Common Hugo Commands
 
-```json
-{
-  "dev": "hugo server",                        // Start dev server
-  "build": "hugo --minify",                    // Build for deployment
-  "clean": "...",                              // Remove build artifacts
-  "deploy": "npm run clean && npm run build"   // Clean and build for deployment
-}
+```bash
+# Development
+hugo server                      # Start dev server (localhost only)
+hugo server --bind 0.0.0.0       # Start dev server (remote access via SSH)
+hugo server -p 1314              # Use different port
+
+# Building
+hugo --baseURL /                 # Build for root or offline use
+hugo --baseURL /wirpv2/          # Build for subdirectory deployment
+hugo --minify                    # Build with minification (optional)
+
+# Cleaning
+rm -rf public resources .hugo_build.lock  # Clear build artifacts
 ```
+
+**Optional NPM Wrappers:**
+If you prefer, `package.json` contains npm script shortcuts:
+- `npm run dev` → `hugo server`
+- `npm run build` → `hugo --minify`
 
 ## 🌍 Cross-Platform Support
 
 The project works on Windows, Mac, and Linux:
 
 - **Hugo**: Cross-platform static site generator
-- **NPM scripts**: Use PowerShell commands on Windows, adapt for Unix systems if needed
-- **No build dependencies**: Pure Hugo, no complex tooling required
+- **Static files only**: No build dependencies or complex tooling
+- **Portable**: Works offline or in any subdirectory
 
 ## 🐛 Troubleshooting
 
@@ -352,16 +490,16 @@ hugo server -p 1314
 
 ### Changes not appearing
 ```bash
-# Clear Hugo cache
-npm run clean
-npm run dev
+# Clear Hugo cache and rebuild
+rm -rf public resources .hugo_build.lock
+hugo server
 ```
 
 ### Assets not loading
-- Check files are in `assets/` not `static/`
-- Hugo Pipes processes `assets/`, not `static/`
-- CSS/JS belong in `assets/` for minification and optimization
-- Only fonts, images, and robots.txt belong in `static/`
+- All assets (CSS, JS, fonts, images) belong in `static/`
+- Hugo copies `static/` files directly to `public/` without processing
+- Check browser console (F12) for 404 errors
+- Verify paths use relative references (e.g., `../fonts/font.otf`)
 
 ## 📄 License
 
@@ -386,7 +524,7 @@ Contributions welcome! To contribute:
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/improvement`)
 3. Make your changes
-4. Test thoroughly (`npm run dev`)
+4. Test thoroughly (`hugo server`)
 5. Commit with clear messages
 6. Push and create a Pull Request
 
@@ -394,7 +532,7 @@ Contributions welcome! To contribute:
 - Content aligns with course philosophy
 - Accessibility standards (WCAG 2.1 AA) maintained
 - Code follows existing patterns
-- Test with `npm run dev` before submitting
+- Test with `hugo server` before submitting
 
 ## 📞 Contact & Support
 
@@ -408,15 +546,32 @@ This course builds on years of radical political education work and countless co
 
 The course draws on traditions of popular education, workers' inquiry, and participatory action research. It stands on the shoulders of generations of organisers and educators committed to democratic, accessible political education.
 
+### Typography
+
+**Blink Font Family** by Mew Too/Cannot Into Space Fonts
+Licensed under [SIL Open Font License 1.1](http://scripts.sil.org/OFL)
+Copyright © 2015 Cannot Into Space Fonts
+
+The Blink typeface is used for the hero text and the site title. The complete font family and license can be found in `static/fonts/` or you can access at https://fontlibrary.org/en/font/blink
+
 ## 📚 Further Reading
 
 For those interested in the pedagogical approach:
 
-- Paulo Freire - *Pedagogy of the Oppressed*
-- James C. Scott - *Domination and the Arts of Resistance*
-- Myles Horton - *The Long Haul*
-- bell hooks - *Teaching to Transgress*
+- Paulo Freire - *Pedagogy of the Oppressed* - available here https://archive.org/details/pedagogyofoppres0000unse
+- James C. Scott - *Domination and the Arts of Resistance* - available here https://files.libcom.org/files/scott_dominationandresistance.pdf
+- Myles Horton - *The Long Haul* - available here - https://archive.org/details/longhaulautobiog0000hort
+- bell hooks - *Teaching to Transgress* - available here https://archive.org/details/teachingtotransg0000hook
+- David Reed - *Education for building a people's movement* - available here https://archive.org/details/educationforbuil0000reed
 
+Reed has four principles for what he calls 'social education' that are useful starting points for thinking about radical education:
+
+1. Use learners' values and social interests to determine the purpose, direction and character of the learning process 
+2. Make the social practice of the learners the basic content of the study process
+3. Link the learner's practice to the historical development of society
+4. Draw on lessons and experiences of other progressive groups to improve learners' practice
+
+These are more aimed at a broader work than is intended with the radical // education (hence why it's called 'social education') but this project fits within this framework to a large extent, with the added intention that the radical // education courses are *explicitly* aimed at both a working class audience *and* the radical community itself. 
 ---
 
 **Built with Hugo • Licensed under GNU FDL 1.3 • Free to adapt and share**

@@ -403,15 +403,26 @@ Under the GNU FDL 1.3 license, you must:
 
 ### Styling
 
-All styles are in `assets/css/style.css`. Key CSS custom properties:
+All styles are in `static/style.css`. The current palette is:
 
 ```css
 :root {
-  --primary-purple: #667eea;
-  --light-purple: #b19cd9;
-  --dark-bg: #1a1a2e;
-  --text-color: #333;
+  /* Autumn earth tones */
+  --autumn-burnt-orange: #D2691E;
+  --autumn-terracotta: #E07A40;
+  --autumn-burgundy: #8B4513;
+  --autumn-sienna: #A0522D;
+  --autumn-ochre: #CC8B3C;
+  --autumn-gold: #DAA520;
+  --autumn-forest: #556B2F;
+  --autumn-olive: #6B8E23;
+  --autumn-brown: #654321;
+  --autumn-bark: #5C4033;
+  --autumn-cream: #F5E6D3;
+  --autumn-beige: #E8D5C4;
+  --autumn-rust: #B7410E;
 }
+  
 ```
 
 ### Navigation
@@ -544,6 +555,8 @@ Contributions welcome! To contribute:
 
 This course builds on years of radical political education work and countless conversations with comrades. Special thanks to all who have facilitated, participated in, and contributed to developing these materials.
 
+In particular the work I have done with the FREE UNIVERSITY BRIGHTON (FUB) and all the students who have attended my courses over the last decade and all my colleagues and comrades who helped organise and teach at FUB.
+
 The course draws on traditions of popular education, workers' inquiry, and participatory action research. It stands on the shoulders of generations of organisers and educators committed to democratic, accessible political education.
 
 ### Typography
@@ -553,6 +566,10 @@ Licensed under [SIL Open Font License 1.1](http://scripts.sil.org/OFL)
 Copyright © 2015 Cannot Into Space Fonts
 
 The Blink typeface is used for the hero text and the site title. The complete font family and license can be found in `static/fonts/` or you can access at https://fontlibrary.org/en/font/blink
+
+### Burger Menu
+
+The code for the Burger Menu on mobile is derived from Alvaro on CodePen - https://codepen.io/alvarotrigo at https://codepen.io/alvarotrigo/pen/oNGzoYd
 
 ## 📚 Further Reading
 
@@ -571,7 +588,7 @@ Reed has four principles for what he calls 'social education' that are useful st
 3. Link the learner's practice to the historical development of society
 4. Draw on lessons and experiences of other progressive groups to improve learners' practice
 
-These are more aimed at a broader work than is intended with the radical // education (hence why it's called 'social education') but this project fits within this framework to a large extent, with the added intention that the radical // education courses are *explicitly* aimed at both a working class audience *and* the radical community itself. 
+Reed's work has a broader audience than is intended with the radical // education (hence why Reed calls his method 'social education') but this project fits within this framework to a large extent, with the added intention that the radical // education courses are *explicitly* aimed at both a working class audience *and* the radical community itself. 
 ---
 
 **Built with Hugo • Licensed under GNU FDL 1.3 • Free to adapt and share**

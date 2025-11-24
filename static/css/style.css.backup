@@ -1317,11 +1317,7 @@ footer {
   display: none;
 }
 
-/* ========================================
-   MOBILE RESPONSIVE STYLES (max-width: 768px)
-   All mobile adaptations consolidated here for easy maintenance
-   Includes: burger menu, navigation, typography, layouts, spacing
-   ======================================== */
+/* Mobile menu styles (shown only on mobile) */
 @media (max-width: 768px) {
   /* Show mobile hamburger, hide desktop nav */
   .mobile-menu {
@@ -1428,12 +1424,24 @@ footer {
     height: 150vh;
     transform: translate(-50%, -50%);
   }
+}
+
+/* ========================================
+   MOBILE RESPONSIVE STYLES (max-width: 768px)
+   All mobile adaptations consolidated here for easy maintenance
+   ======================================== */
+
+@media (max-width: 768px) {
 
   /* === HEADER & NAVIGATION === */
   .header-content {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .nav {
+    display: none !important;
   }
 
   .nav-links {

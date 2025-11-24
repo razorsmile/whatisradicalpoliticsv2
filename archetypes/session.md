@@ -5,7 +5,6 @@ description: ""
 type: "session"
 week_badge: "WEEK X"
 weight: 1
-draft: false
 ---
 
 <div class="section-block">

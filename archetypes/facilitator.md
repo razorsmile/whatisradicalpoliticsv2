@@ -2,7 +2,6 @@
 title: "What is Radical Politics? - critical political education course (V.2) - Week X Facilitator Script"
 description: "This is a script for week X of the Radical Education course. It is designed to help facilitators run the session effectively."
 type: "facilitator"
-draft: false
 ---
 
 <div class="section-block">

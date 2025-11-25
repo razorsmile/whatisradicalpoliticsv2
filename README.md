@@ -300,6 +300,8 @@ hugo --baseURL /wirpv2/
 # Upload public/* to your web server
 # Example: Copy to /var/www/yoursite.com/wirpv2/
 cp -r public/* /var/www/yoursite.com/wirpv2/
+
+# A deploy script is included,change directory parameters to use but note that this script is just for Local deployment from a build directory to a serve directory. 
 ```
 
 **Deployment Options:**
@@ -437,22 +439,7 @@ Edit `content/_index.md` (frontmatter) and `layouts/index.html` (template).
 
 Print-specific CSS is in `assets/css/style.css` under `@media print`.
 
-## 📋 File Structure Reference
-
-### Important Files
-
-| File | Purpose |
-|------|---------|
-| `config/_default/config.toml` | Shared Hugo configuration |
-| `config/production/config.toml` | Production deployment settings |
-| `config/offline/config.toml` | Offline/portable build settings |
-| `layouts/_default/baseof.html` | Base HTML template |
-| `layouts/partials/nav.html` | Navigation menu |
-| `assets/css/style.css` | All site styles |
-| `content/_index.md` | Homepage content |
-| `static/robots.txt` | Crawler blocking |
-
-### Content Organisation
+## 📋 Content Organisation
 
 - **Sessions** (`session-[1-4].md`): Participant-facing course content
 - **Facilitator Scripts** (`facilitator-week-[1-4].md`): Detailed facilitation notes

@@ -462,19 +462,6 @@ hugo --minify                    # Build with minification (optional)
 rm -rf public resources .hugo_build.lock  # Clear build artifacts
 ```
 
-**Optional NPM Wrappers:**
-If you prefer, `package.json` contains npm script shortcuts:
-- `npm run dev` → `hugo server`
-- `npm run build` → `hugo --minify`
-
-## 🌍 Cross-Platform Support
-
-The project works on Windows, Mac, and Linux:
-
-- **Hugo**: Cross-platform static site generator
-- **Static files only**: No build dependencies or complex tooling
-- **Portable**: Works offline or in any subdirectory
-
 ## 🐛 Troubleshooting
 
 ### Dev server won't start
@@ -575,7 +562,7 @@ Reed has four principles for what he calls 'social education' that are useful st
 3. Link the learner's practice to the historical development of society
 4. Draw on lessons and experiences of other progressive groups to improve learners' practice
 
-Reed's work has a broader audience than is intended with this radical education course (hence why Reed calls his method 'social education').  This course is aimed more *explicitly* at both a working class audience *and* the radical community itself than in the case of Reed's work. 
+# Reed's work has a broader audience than is intended with this radical education course (hence why Reed calls his method 'social education').  This course is aimed more *explicitly* at both a working class audience *and* the radical community itself than in the case of Reed's work. 
 ---
 
 **Built with Hugo • Licensed under GNU FDL 1.3 • Free to adapt and share**

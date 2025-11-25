@@ -1,28 +1,55 @@
+{{/* Define the main content block for handout pages */}}
 {{ define "main" }}
+
+{{/* Hero section - displays handout title and navigation */}}
 <section class="handout-hero">
   <div class="session-hero-content">
+    {{/* Display the handout title from frontmatter */}}
     <h1>{{ .Title }}</h1>
+
+    {{/* If a description exists in frontmatter, display it */}}
     {{ if .Params.description }}
     <p class="session-description">{{ .Params.description }}</p>
     {{ end }}
 
+    {{/* Navigation logic - only display if weight parameter exists */}}
     {{ if .Params.weight }}
+    {{/* Store current handout's weight (originally 1-11) */}}
     {{ $currentWeight := .Params.weight }}
+
+    {{/* Dynamically count total handouts:
+         1. Get all pages with type="handout"
+         2. Filter to only those with weight < 90 (excludes acknowledgments page at weight 99)
+    */}}
+    {{ $handouts := where (where .Site.RegularPages "Type" "handout") ".Params.weight" "lt" 90 }}
+
+    {{/* Count the total number of regular handouts (1-11, or more if added) */}}
+    {{ $maxHandout := len $handouts }}
+
+    {{/* Navigation container with accessibility label */}}
     <nav class="session-nav" aria-label="Navigate between handouts">
+
+      {{/* Previous Handout Link - only show if we're NOT on handout 1 */}}
       {{ if gt $currentWeight 1 }}
+      {{/* Calculate previous handout number (current - 1) */}}
       {{ $prevWeight := sub $currentWeight 1 }}
+      {{/* Build URL path: /handout-N/ */}}
       {{ $prevHandout := printf "/handout-%d/" $prevWeight }}
       <a href="{{ $prevHandout }}" class="session-nav-link prev">
         <span class="nav-arrow">&laquo;</span> Previous Handout
       </a>
       {{ end }}
 
-      {{ if and (gt $currentWeight 1) (lt $currentWeight 11) }}
+      {{/* Divider - only show if both prev AND next links are present */}}
+      {{ if and (gt $currentWeight 1) (lt $currentWeight $maxHandout) }}
       <span class="session-nav-divider">|</span>
       {{ end }}
 
-      {{ if lt $currentWeight 11 }}
+      {{/* Next Handout Link - only show if we're NOT on the last handout */}}
+      {{ if lt $currentWeight $maxHandout }}
+      {{/* Calculate next handout number (current + 1) */}}
       {{ $nextWeight := add $currentWeight 1 }}
+      {{/* Build URL path: /handout-N/ */}}
       {{ $nextHandout := printf "/handout-%d/" $nextWeight }}
       <a href="{{ $nextHandout }}" class="session-nav-link next">
         Next Handout <span class="nav-arrow">&raquo;</span>
@@ -33,10 +60,13 @@
   </div>
 </section>
 
+{{/* Main content section - displays the handout body content */}}
 <section class="session-content">
   <div class="content-wrapper">
+    {{/* Render the markdown content from the handout file */}}
     {{ .Content }}
-    
+
+    {{/* Footer navigation with print button */}}
     <div class="handout-footer-nav">
       <button class="print-button" aria-label="Print this handout for offline use" title="Print this handout">
         <span aria-hidden="true">🖨️</span> Print Handout

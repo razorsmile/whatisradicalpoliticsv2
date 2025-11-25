@@ -114,8 +114,6 @@ body.homepage header.visible {
   margin-left: auto;
 }
 
-
-
 .nav-links {
   list-style: none;
   margin: 0;
@@ -133,51 +131,6 @@ body.homepage header.visible {
 
 .nav-links a:hover {
   opacity: 0.8;
-}
-
-/* Dropdown Menu Styles */
-.dropdown {
-  position: relative;
-}
-
-.dropdown-toggle {
-  cursor: pointer;
-}
-
-.dropdown-menu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background: var(--autumn-sienna);
-  list-style: none;
-  padding: 0.5rem 0;
-  margin: 0;
-  min-width: 220px;
-  border-radius: 4px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  z-index: 1000;
-}
-
-.dropdown:hover .dropdown-menu {
-  display: block;
-}
-
-.dropdown-menu li {
-  margin: 0;
-}
-
-.dropdown-menu a {
-  display: block;
-  padding: 0.75rem 1.5rem;
-  color: white;
-  text-decoration: none;
-  transition: background 0.2s ease;
-}
-
-.dropdown-menu a:hover {
-  background: var(--autumn-burgundy);
-  text-decoration: none;
 }
 
 main {
@@ -200,6 +153,7 @@ body:not(.homepage) main {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  background: #2a2a2a;
 }
 
 .hero-bg {
@@ -395,23 +349,7 @@ body:not(.homepage) main {
   margin: 0 auto;
 }
 
-/* Course Overview Section */
-.course-overview {
-  padding: 4rem 2rem;
-  background: #f8f8f8;
-}
-
-.overview-content {
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-.overview-content h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  color: #333;
-}
-
+/* Standout Card - Reusable callout component */
 .standout-card {
   background: #f8f9fa;
   color: #333;
@@ -688,7 +626,7 @@ footer {
 }
 
 .footer-section p {
-  color: var(--autumn-cream);
+  color: white;
   line-height: 1.6;
   margin: 0.5rem 0;
 }
@@ -706,6 +644,7 @@ footer {
 .footer-back-to-top {
   display: flex;
   justify-content: flex-end;
+  color: white;
 }
 
 .back-to-top {
@@ -1484,15 +1423,6 @@ footer {
     font-size: 1.25rem;
   }
 
-  /* === COURSE OVERVIEW === */
-  .course-overview {
-    padding: 2rem 1rem;
-  }
-
-  .overview-content h2 {
-    font-size: 1.75rem;
-  }
-
   .standout-card {
     padding: 1.5rem;
     font-size: 1rem;
@@ -2008,12 +1938,6 @@ button:focus {
   box-shadow: 0 0 0 3px rgba(224, 122, 64, 0.2);
 }
 
-/* Ensure dropdown menu items are keyboard accessible */
-.dropdown-menu li a:focus {
-  background: #f0f0f0;
-  outline: 2px solid var(--autumn-terracotta);
-}
-
 /* Improved link contrast */
 a {
   color: var(--autumn-sienna);
@@ -2028,9 +1952,21 @@ a:hover {
   color: white !important;
 }
 
-.site-title a,
-.footer a {
+.site-title a {
   color: inherit;
+}
+
+/* Footer links should always be visible on dark background */
+footer a,
+.footer-section a,
+.footer a {
+  color: var(--autumn-gold) !important;
+}
+
+footer a:hover,
+.footer-section a:hover,
+.footer a:hover {
+  color: var(--autumn-ochre) !important;
 }
 
 /* Ensure sufficient color contrast for text on colored backgrounds */

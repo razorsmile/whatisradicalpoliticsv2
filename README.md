@@ -49,7 +49,7 @@ Survey existing organising in your locality and identify opportunities
 
 ✅ **Static File Architecture**: Simple, portable deployment without build-time asset processing
 ✅ **Self-hosted Assets**: No external CDN dependencies
-✅ **Portable Deployment**: Works in any subdirectory or as offline/downloadable site
+✅ **Portable Deployment**: Works in any subdirectory or as offline/downloadable site (still needs testing).
 ✅ **WCAG 2.1 AA Compliant**: Full keyboard navigation, ARIA labels, screen reader support
 ✅ **Print-Optimized**: Special layouts for printing handouts and facilitator scripts
 ✅ **Responsive Design**: Works on desktop, tablet, and mobile

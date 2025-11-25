@@ -11,9 +11,9 @@ RED='\033[0;31m'
 NC='\033[0m' # No Color
 
 # Configuration
-BASE_URL="/wirpv2/"
-DESTINATION="/var/www/systemdecomposition.org/wirpv2/"
-BACKUP_DIR="/home/valentine/backups/wirpv2"
+BASE_URL="/set this/"
+DESTINATION="/set this"
+BACKUP_DIR="/set this"
 
 echo -e "${YELLOW}=== What is Radical Politics v2 - Deployment ===${NC}"
 echo ""
@@ -85,11 +85,11 @@ echo -e "${GREEN}✓ Deployed $FILE_COUNT files to production${NC}"
 
 echo ""
 echo -e "${GREEN}=== Deployment Complete ===${NC}"
-echo -e "Site URL: ${GREEN}https://systemdecomposition.org/wirpv2/${NC}"
+echo -e "Site URL: ${GREEN}https://set this/${NC}"
 echo -e "Backup: ${GREEN}$BACKUP_FILE${NC}"
 echo ""
 echo "To test the site:"
-echo "  curl -I https://systemdecomposition.org/wirpv2/"
+echo "  curl -I https:// set this/"
 echo ""
 echo "To restore from backup if needed:"
 echo "  tar -xzf $BACKUP_FILE -C $DESTINATION"

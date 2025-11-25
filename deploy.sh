@@ -1,6 +1,6 @@
 #!/bin/bash
 # Deploy script for What is Radical Politics v2
-# Deploys to systemdecomposition.org/wirpv2/
+# Deploys to set this for your site and change the other st this elements appropriately/
 
 set -e  # Exit on any error
 
